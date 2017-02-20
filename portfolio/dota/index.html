@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Title of the page</title>
+    <meta name="viewport" content="width=device-width"/>
+    <script src="js/all.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    <script>window.jQuery.ui || document.write('<script src="js/jquery-ui.min.js"><\/script>')</script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" media="all" href="styles/main_global.css"/>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header_first_row">
+        <div class="header_first_row_in">
+          <h1 class="logo_w"><span class="logo_text">BuildDota2.com</span><a href="#" class="logo"><img alt="" src="i/logo.png" class="logo_i"/></a></h1>
+          <div class="header_butt_list_w">
+            <ul class="header_butt_list">
+              <li class="head_butt_item"><a href="#" class="head_butt down_mod"><span class="head_butt_in down_mod">Download</span></a></li>
+              <li class="head_butt_item"><a href="#" class="head_butt don_mod"><span class="head_butt_in don_mod">Donate</span></a></li>
+            </ul>
+          </div>
+          <div class="head_login_block">
+            <ul class="head_login_list">
+              <li class="head_login_item"><a href="#" id="lop_popap_open" class="head_login_link">Log In</a>
+                <div id="log_popap" class="login_popap"><a href="#" class="login_vk_butt">Login with VK</a>
+                  <div class="login_alt_w"><span class="login_alt">or</span></div><a href="#" class="login_face_butt">Login with Facebook</a>
+                  <div class="login_alt_w"><span class="login_alt">or</span></div>
+                  <form action="" class="login_form">
+                    <ul class="login_form_i_list">
+                      <li class="login_form_i_item">
+                        <dl class="form_cell form_cell_v1_mod">
+                          <dt class="form_c_hline form_v1_mod hline_hide_mod">
+                            <label for="login_name">Login/Email
+                            </label>
+                          </dt>
+                          <dd class="form_c_f_w form_v1_mod hline_hide_mod">
+                            <input type="text" id="login_name" placeholder="Login/Email" class="f_c_field default_mod "/>
+                          </dd>
+                        </dl>
+                      </li>
+                      <li class="login_form_i_item">
+                        <dl class="form_cell form_cell_v1_mod">
+                          <dt class="form_c_hline form_v1_mod hline_hide_mod">
+                            <label for="login_pass">Password
+                            </label>
+                          </dt>
+                          <dd class="form_c_f_w form_v1_mod hline_hide_mod">
+                            <input type="password" id="login_pass" placeholder="Password" class="f_c_field default_mod "/>
+                          </dd>
+                        </dl>
+                      </li>
+                    </ul>
+                    <button class="login_enter_butt">Enter</button>
+                    <div class="login_forgot_link_w"><a href="#" class="login_forgot_link">Forgot your password?</a></div>
+                    <label class="lbl_rb_ch_block log_rem_mod">
+                      <input name="" type="checkbox" class="lbl_inp_rb_ch log_rem_mod"/><span class="lbl_rb_ch_text log_rem_mod">Remember Me</span>
+                    </label>
+                  </form>
+                  <div class="log_reg_block"><span class="log_reg_question">Do you haven’t account yet?</span><a href="#" class="log_reg_link">Registration in 30 seconds!</a></div>
+                </div>
+              </li>
+              <li class="head_login_item"><a href="#" class="head_login_link">Sign Up</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="header_sec_row">
+        <div class="header_sec_row_in">
+          <nav class="head_menu_w">
+            <ul class="head_menu">
+              <li class="head_menu_item">
+                <div class="main_menu_item_in"><a href="#" class="head_menu_link"><span class="head_menu_link_in">Heroes</span></a></div>
+              </li>
+              <li class="head_menu_item">
+                <div class="main_menu_item_in"><a href="#" class="head_menu_link"><span class="head_menu_link_in">Guides</span></a></div>
+              </li>
+              <li class="head_menu_item">
+                <div class="main_menu_item_in">
+                  <div class="head_menu_link"><span class="head_menu_link_in sub_mod">Allies & Counters</span>
+                    <div class="head_menu_sublist_w">
+                      <ul class="head_menu_sublist">
+                        <li class="head_menu_subitem"><a href="#" class="head_menu_sublink">Alies</a></li>
+                        <li class="head_menu_subitem"><a href="#" class="head_menu_sublink">Counters</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="head_menu_item">
+                <div class="main_menu_item_in">
+                  <div class="head_menu_link"><span class="head_menu_link_in sub_mod">Builds</span>
+                    <div class="head_menu_sublist_w">
+                      <ul class="head_menu_sublist">
+                        <li class="head_menu_subitem"><a href="#" class="head_menu_sublink">Alies</a></li>
+                        <li class="head_menu_subitem"><a href="#" class="head_menu_sublink">Counters</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </nav>
+          <div class="head_search_w">
+            <dl class="form_cell form_cell_search_mod">
+              <dt class="form_c_hline form_search_mod hline_hide_mod">
+                <label for="head_search">Search
+                </label>
+              </dt>
+              <dd class="form_c_f_w form_search_mod hline_hide_mod">
+                <input type="text" id="head_search" placeholder="" class="f_c_field search_mod "/>
+              </dd>
+            </dl><a href="#" class="search_icon head_mod"></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="wrapper">
+      <div class="base">
+        <main class="page_content">
+          <div class="head_slider_w">
+            <ul id="head_slider" class="head_slider_list">
+              <li class="head_slider_item">
+                <div class="head_slider_block">
+                  <div class="head_slider_content">
+                    <h2 class="head_slider_title">Сhoose any hero</h2><span class="head_slider_def">and make any build just in a few seconds, create a guide and share it with your friends!</span>
+                  </div><img alt="" src="i/slider_i_1.jpg" class="head_slider_i">
+                </div>
+              </li>
+              <li class="head_slider_item">
+                <div class="head_slider_block">
+                  <div class="head_slider_content">
+                    <h2 class="head_slider_title">Сhoose any hero</h2><span class="head_slider_def">and make any build just in a few seconds, create a guide and share it with your friends!</span>
+                  </div><img alt="" src="i/slider_i_1.jpg" class="head_slider_i">
+                </div>
+              </li>
+              <li class="head_slider_item">
+                <div class="head_slider_block">
+                  <div class="head_slider_content">
+                    <h2 class="head_slider_title">Сhoose any hero</h2><span class="head_slider_def">and make any build just in a few seconds, create a guide and share it with your friends!</span>
+                  </div><img alt="" src="i/slider_i_1.jpg" class="head_slider_i">
+                </div>
+              </li>
+              <li class="head_slider_item">
+                <div class="head_slider_block">
+                  <div class="head_slider_content">
+                    <h2 class="head_slider_title">Сhoose any hero</h2><span class="head_slider_def">and make any build just in a few seconds, create a guide and share it with your friends!</span>
+                  </div><img alt="" src="i/slider_i_1.jpg" class="head_slider_i">
+                </div>
+              </li>
+              <li class="head_slider_item">
+                <div class="head_slider_block">
+                  <div class="head_slider_content">
+                    <h2 class="head_slider_title">Сhoose any hero</h2><span class="head_slider_def">and make any build just in a few seconds, create a guide and share it with your friends!</span>
+                  </div><img alt="" src="i/slider_i_1.jpg" class="head_slider_i">
+                </div>
+              </li>
+            </ul>
+          </div>
+          <ul class="main_section_list offset_mod">
+            <li class="main_section_item">
+              <div class="main_section_block top_bot_mod">
+                <h2 class="main_section_title">All heroes</h2>
+                <ul class="feature_list home_mod">
+                  <li class="feature_item home_mod">
+                    <div class="feature_block home_mod strength_mod"><a href="#" class="feature_text home_mod">Strength</a></div>
+                  </li>
+                  <li class="feature_item home_mod">
+                    <div class="feature_block home_mod agility_mod"><a href="#" class="feature_text home_mod">Agility</a></div>
+                  </li>
+                  <li class="feature_item home_mod">
+                    <div class="feature_block home_mod intel_mod"><a href="#" class="feature_text home_mod">Intelligence</a></div>
+                  </li>
+                </ul>
+                <div class="search_heroes_block home_mod">
+                  <dl class="form_cell form_cell_v2_mod">
+                    <dt class="form_c_hline form_v2_mod">
+                      <label for="search_heroes">Search heroes by name:
+                      </label>
+                    </dt>
+                    <dd class="form_c_f_w form_v2_mod">
+                      <input type="text" id="search_heroes" placeholder="" class="f_c_field default_mod_2 "/>
+                    </dd>
+                  </dl><a href="#" class="search_icon hero_mod"></a>
+                </div>
+                <div class="all_heroes_slider_w">
+                  <ul id="all_heroes_slider" class="all_heroes_list slider_mod">
+                    <li class="all_heroes_item slider_mod">
+                      <ul class="all_heroes_sub_list slider_mod">
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod strength_mod"><img alt="" src="i/heroes/hero_sm_1.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod agility_mod"><img alt="" src="i/heroes/hero_sm_2.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod intel_mod"><img alt="" src="i/heroes/hero_sm_3.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod strength_mod"><img alt="" src="i/heroes/hero_sm_1.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod strength_mod"><img alt="" src="i/heroes/hero_sm_2.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod strength_mod"><img alt="" src="i/heroes/hero_sm_1.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod agility_mod"><img alt="" src="i/heroes/hero_sm_2.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod intel_mod"><img alt="" src="i/heroes/hero_sm_3.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod intel_mod"><img alt="" src="i/heroes/hero_sm_4.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod intel_mod"><img alt="" src="i/heroes/hero_sm_6.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod agility_mod"><img alt="" src="i/heroes/hero_sm_5.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod intel_mod"><img alt="" src="i/heroes/hero_sm_4.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod agility_mod"><img alt="" src="i/heroes/hero_sm_6.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod intel_mod"><img alt="" src="i/heroes/hero_sm_4.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod intel_mod"><img alt="" src="i/heroes/hero_sm_6.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod agility_mod"><img alt="" src="i/heroes/hero_sm_5.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod strength_mod"><img alt="" src="i/heroes/hero_sm_9.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod strength_mod"><img alt="" src="i/heroes/hero_sm_8.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod agility_mod"><img alt="" src="i/heroes/hero_sm_7.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod agility_mod"><img alt="" src="i/heroes/hero_sm_9.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod intel_mod"><img alt="" src="i/heroes/hero_sm_8.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod strength_mod"><img alt="" src="i/heroes/hero_sm_9.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod strength_mod"><img alt="" src="i/heroes/hero_sm_8.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod agility_mod"><img alt="" src="i/heroes/hero_sm_7.jpg" class="hero_i slider_mod"/></a></li>
+                      </ul>
+                    </li>
+                    <li class="all_heroes_item slider_mod">
+                      <ul class="all_heroes_sub_list slider_mod">
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod strength_mod"><img alt="" src="i/heroes/hero_sm_1.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod agility_mod"><img alt="" src="i/heroes/hero_sm_2.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod intel_mod"><img alt="" src="i/heroes/hero_sm_3.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod strength_mod"><img alt="" src="i/heroes/hero_sm_1.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod strength_mod"><img alt="" src="i/heroes/hero_sm_2.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod strength_mod"><img alt="" src="i/heroes/hero_sm_1.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod agility_mod"><img alt="" src="i/heroes/hero_sm_2.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod intel_mod"><img alt="" src="i/heroes/hero_sm_3.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod intel_mod"><img alt="" src="i/heroes/hero_sm_4.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod intel_mod"><img alt="" src="i/heroes/hero_sm_6.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod agility_mod"><img alt="" src="i/heroes/hero_sm_5.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod intel_mod"><img alt="" src="i/heroes/hero_sm_4.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod agility_mod"><img alt="" src="i/heroes/hero_sm_6.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod intel_mod"><img alt="" src="i/heroes/hero_sm_4.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod intel_mod"><img alt="" src="i/heroes/hero_sm_6.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod agility_mod"><img alt="" src="i/heroes/hero_sm_5.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod strength_mod"><img alt="" src="i/heroes/hero_sm_9.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod strength_mod"><img alt="" src="i/heroes/hero_sm_8.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod agility_mod"><img alt="" src="i/heroes/hero_sm_7.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod agility_mod"><img alt="" src="i/heroes/hero_sm_9.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod intel_mod"><img alt="" src="i/heroes/hero_sm_8.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod strength_mod"><img alt="" src="i/heroes/hero_sm_9.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod strength_mod"><img alt="" src="i/heroes/hero_sm_8.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod agility_mod"><img alt="" src="i/heroes/hero_sm_7.jpg" class="hero_i slider_mod"/></a></li>
+                      </ul>
+                    </li>
+                    <li class="all_heroes_item slider_mod">
+                      <ul class="all_heroes_sub_list slider_mod">
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod strength_mod"><img alt="" src="i/heroes/hero_sm_1.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod agility_mod"><img alt="" src="i/heroes/hero_sm_2.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod intel_mod"><img alt="" src="i/heroes/hero_sm_3.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod strength_mod"><img alt="" src="i/heroes/hero_sm_1.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod strength_mod"><img alt="" src="i/heroes/hero_sm_2.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod strength_mod"><img alt="" src="i/heroes/hero_sm_1.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod agility_mod"><img alt="" src="i/heroes/hero_sm_2.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod intel_mod"><img alt="" src="i/heroes/hero_sm_3.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod intel_mod"><img alt="" src="i/heroes/hero_sm_4.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod intel_mod"><img alt="" src="i/heroes/hero_sm_6.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod agility_mod"><img alt="" src="i/heroes/hero_sm_5.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod intel_mod"><img alt="" src="i/heroes/hero_sm_4.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod agility_mod"><img alt="" src="i/heroes/hero_sm_6.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod intel_mod"><img alt="" src="i/heroes/hero_sm_4.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod intel_mod"><img alt="" src="i/heroes/hero_sm_6.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod agility_mod"><img alt="" src="i/heroes/hero_sm_5.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod strength_mod"><img alt="" src="i/heroes/hero_sm_9.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod strength_mod"><img alt="" src="i/heroes/hero_sm_8.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod agility_mod"><img alt="" src="i/heroes/hero_sm_7.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod agility_mod"><img alt="" src="i/heroes/hero_sm_9.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod intel_mod"><img alt="" src="i/heroes/hero_sm_8.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod strength_mod"><img alt="" src="i/heroes/hero_sm_9.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod strength_mod"><img alt="" src="i/heroes/hero_sm_8.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod agility_mod"><img alt="" src="i/heroes/hero_sm_7.jpg" class="hero_i slider_mod"/></a></li>
+                      </ul>
+                    </li>
+                    <li class="all_heroes_item slider_mod">
+                      <ul class="all_heroes_sub_list slider_mod">
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod strength_mod"><img alt="" src="i/heroes/hero_sm_1.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod agility_mod"><img alt="" src="i/heroes/hero_sm_2.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod intel_mod"><img alt="" src="i/heroes/hero_sm_3.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod strength_mod"><img alt="" src="i/heroes/hero_sm_1.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod strength_mod"><img alt="" src="i/heroes/hero_sm_2.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod strength_mod"><img alt="" src="i/heroes/hero_sm_1.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod agility_mod"><img alt="" src="i/heroes/hero_sm_2.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod intel_mod"><img alt="" src="i/heroes/hero_sm_3.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod intel_mod"><img alt="" src="i/heroes/hero_sm_4.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod intel_mod"><img alt="" src="i/heroes/hero_sm_6.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod agility_mod"><img alt="" src="i/heroes/hero_sm_5.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod intel_mod"><img alt="" src="i/heroes/hero_sm_4.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod agility_mod"><img alt="" src="i/heroes/hero_sm_6.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod intel_mod"><img alt="" src="i/heroes/hero_sm_4.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod intel_mod"><img alt="" src="i/heroes/hero_sm_6.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod agility_mod"><img alt="" src="i/heroes/hero_sm_5.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod strength_mod"><img alt="" src="i/heroes/hero_sm_9.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod strength_mod"><img alt="" src="i/heroes/hero_sm_8.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod agility_mod"><img alt="" src="i/heroes/hero_sm_7.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod agility_mod"><img alt="" src="i/heroes/hero_sm_9.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod intel_mod"><img alt="" src="i/heroes/hero_sm_8.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod strength_mod"><img alt="" src="i/heroes/hero_sm_9.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod strength_mod"><img alt="" src="i/heroes/hero_sm_8.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod agility_mod"><img alt="" src="i/heroes/hero_sm_7.jpg" class="hero_i slider_mod"/></a></li>
+                      </ul>
+                    </li>
+                    <li class="all_heroes_item slider_mod">
+                      <ul class="all_heroes_sub_list slider_mod">
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod strength_mod"><img alt="" src="i/heroes/hero_sm_1.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod agility_mod"><img alt="" src="i/heroes/hero_sm_2.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod intel_mod"><img alt="" src="i/heroes/hero_sm_3.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod strength_mod"><img alt="" src="i/heroes/hero_sm_1.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod strength_mod"><img alt="" src="i/heroes/hero_sm_2.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod strength_mod"><img alt="" src="i/heroes/hero_sm_1.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod agility_mod"><img alt="" src="i/heroes/hero_sm_2.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod intel_mod"><img alt="" src="i/heroes/hero_sm_3.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod intel_mod"><img alt="" src="i/heroes/hero_sm_4.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod intel_mod"><img alt="" src="i/heroes/hero_sm_6.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod agility_mod"><img alt="" src="i/heroes/hero_sm_5.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod intel_mod"><img alt="" src="i/heroes/hero_sm_4.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod agility_mod"><img alt="" src="i/heroes/hero_sm_6.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod intel_mod"><img alt="" src="i/heroes/hero_sm_4.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod intel_mod"><img alt="" src="i/heroes/hero_sm_6.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod agility_mod"><img alt="" src="i/heroes/hero_sm_5.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod strength_mod"><img alt="" src="i/heroes/hero_sm_9.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod strength_mod"><img alt="" src="i/heroes/hero_sm_8.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod agility_mod"><img alt="" src="i/heroes/hero_sm_7.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod agility_mod"><img alt="" src="i/heroes/hero_sm_9.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod intel_mod"><img alt="" src="i/heroes/hero_sm_8.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod strength_mod"><img alt="" src="i/heroes/hero_sm_9.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod strength_mod"><img alt="" src="i/heroes/hero_sm_8.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod agility_mod"><img alt="" src="i/heroes/hero_sm_7.jpg" class="hero_i slider_mod"/></a></li>
+                      </ul>
+                    </li>
+                    <li class="all_heroes_item slider_mod">
+                      <ul class="all_heroes_sub_list slider_mod">
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod strength_mod"><img alt="" src="i/heroes/hero_sm_1.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod agility_mod"><img alt="" src="i/heroes/hero_sm_2.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod intel_mod"><img alt="" src="i/heroes/hero_sm_3.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod strength_mod"><img alt="" src="i/heroes/hero_sm_1.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod strength_mod"><img alt="" src="i/heroes/hero_sm_2.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod strength_mod"><img alt="" src="i/heroes/hero_sm_1.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod agility_mod"><img alt="" src="i/heroes/hero_sm_2.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod intel_mod"><img alt="" src="i/heroes/hero_sm_3.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod intel_mod"><img alt="" src="i/heroes/hero_sm_4.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod intel_mod"><img alt="" src="i/heroes/hero_sm_6.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod agility_mod"><img alt="" src="i/heroes/hero_sm_5.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod intel_mod"><img alt="" src="i/heroes/hero_sm_4.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod agility_mod"><img alt="" src="i/heroes/hero_sm_6.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod intel_mod"><img alt="" src="i/heroes/hero_sm_4.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod intel_mod"><img alt="" src="i/heroes/hero_sm_6.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod agility_mod"><img alt="" src="i/heroes/hero_sm_5.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod strength_mod"><img alt="" src="i/heroes/hero_sm_9.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod strength_mod"><img alt="" src="i/heroes/hero_sm_8.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod agility_mod"><img alt="" src="i/heroes/hero_sm_7.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod agility_mod"><img alt="" src="i/heroes/hero_sm_9.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod intel_mod"><img alt="" src="i/heroes/hero_sm_8.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod strength_mod"><img alt="" src="i/heroes/hero_sm_9.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod strength_mod"><img alt="" src="i/heroes/hero_sm_8.jpg" class="hero_i slider_mod"/></a></li>
+                        <li class="all_heroes_subitem slider_mod"><a href="#" class="hero_block slider_mod agility_mod"><img alt="" src="i/heroes/hero_sm_7.jpg" class="hero_i slider_mod"/></a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <div class="see_more_butt_w"><a href="#" class="see_more_butt">See more...</a></div>
+              </div>
+            </li>
+            <li class="main_section_item">
+              <div class="main_section_block top_bot_mod split_mod">
+                <div class="main_section_block_in wide_mod">
+                  <h2 class="main_section_title">Workshop</h2>
+                  <div class="workshop_block"><img alt="" src="i/workshop_i.jpg" class="workshop_i"/>
+                    <div class="workshop_text">Experiment with builds for your favorite heroes!</div>
+                  </div>
+                  <div class="see_more_butt_w"><a href="#" class="see_more_butt">See more...</a></div>
+                </div>
+                <div class="main_section_block_in sm_mod">
+                  <h2 class="main_section_title">Top Guides</h2>
+                  <ul class="guide_list v1_mod">
+                    <li class="guide_item v1_mod">
+                      <article class="guide_block v1_mod"><a href="#" class="guide_i_w"><img alt="" src="i/heroes/guide_1.jpg" class="guide_i"/></a>
+                        <div class="guide_info v1_mod"><a href="#" class="guide_title v1_mod">How to be a dirty Brood abuser - a tactical guide</a>
+                          <div class="guide_def v1_mod"><span>By</span> <a href="#" class="guide_autor v1_mod">Hamster</a> <span>updated Today @ 11:27am</span>
+                          </div>
+                        </div>
+                      </article>
+                    </li>
+                    <li class="guide_item v1_mod">
+                      <article class="guide_block v1_mod"><a href="#" class="guide_i_w"><img alt="" src="i/heroes/guide_2.jpg" class="guide_i"/></a>
+                        <div class="guide_info v1_mod"><a href="#" class="guide_title v1_mod">All guns blazing with no escape, a guide to DPS Sniper</a>
+                          <div class="guide_def v1_mod"><span>By</span> <a href="#" class="guide_autor v1_mod">StarryOwl</a> <span>updated Yesterday</span>
+                          </div>
+                        </div>
+                      </article>
+                    </li>
+                    <li class="guide_item v1_mod">
+                      <article class="guide_block v1_mod"><a href="#" class="guide_i_w"><img alt="" src="i/heroes/guide_3.jpg" class="guide_i"/></a>
+                        <div class="guide_info v1_mod"><a href="#" class="guide_title v1_mod">Ginsing's Juggernaut - Midgame Superstar</a>
+                          <div class="guide_def v1_mod"><span>By</span> <a href="#" class="guide_autor v1_mod">Ginsing</a> <span>updated June 12, 2015</span>
+                          </div>
+                        </div>
+                      </article>
+                    </li>
+                  </ul>
+                  <div class="see_more_butt_w"><a href="#" class="see_more_butt">See more...</a></div>
+                </div>
+              </div>
+            </li>
+            <li class="main_section_item">
+              <div class="main_section_block top_bot_mod split_mod">
+                <div class="main_section_block_in half_mod">
+                  <h2 class="main_section_title">Allies</h2>
+                  <div class="about_hero_slider_w">
+                    <ul id="about_hero_slider_1" class="about_hero_slider_list">
+                      <li class="about_hero_slider_item">
+                        <div class="about_hero_slider_block">
+                          <div class="about_hero_i_w strength_mod"><img alt="" src="i/heroes/hero_big_1.jpg" class="about_hero_i"/></div>
+                          <div class="about_hero_info">
+                            <dl class="about_hero_info_dl">
+                              <dt class="hero_name about_slider_mod">Winter Wyvern</dt>
+                              <dd class="hero_status about_slider_mod">Auroth</dd>
+                            </dl>
+                            <ul class="hero_option_list about_slider_mod">
+                              <li class="hero_option_item about_slider_mod">
+                                <dl class="hero_option_dl about_slider_mod">
+                                  <dt class="hero_option_title about_slider_mod">Faction</dt>
+                                  <dd class="hero_option_def about_slider_mod">The Dire</dd>
+                                </dl>
+                              </li>
+                              <li class="hero_option_item about_slider_mod">
+                                <dl class="hero_option_dl about_slider_mod">
+                                  <dt class="hero_option_title about_slider_mod">Primary Attribute:</dt>
+                                  <dd class="hero_option_def about_slider_mod">Intelligence</dd>
+                                </dl>
+                              </li>
+                              <li class="hero_option_item about_slider_mod">
+                                <dl class="hero_option_dl about_slider_mod">
+                                  <dt class="hero_option_title about_slider_mod">Attack Type:</dt>
+                                  <dd class="hero_option_def about_slider_mod">Ranged</dd>
+                                </dl>
+                              </li>
+                              <li class="hero_option_item about_slider_mod">
+                                <dl class="hero_option_dl about_slider_mod">
+                                  <dt class="hero_option_title about_slider_mod">Role(s):</dt>
+                                  <dd class="hero_option_def about_slider_mod">support</dd>
+                                </dl>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="about_hero_slider_item">
+                        <div class="about_hero_slider_block">
+                          <div class="about_hero_i_w strength_mod"><img alt="" src="i/heroes/hero_big_1.jpg" class="about_hero_i"/></div>
+                          <div class="about_hero_info">
+                            <dl class="about_hero_info_dl">
+                              <dt class="hero_name about_slider_mod">Winter Wyvern</dt>
+                              <dd class="hero_status about_slider_mod">Auroth</dd>
+                            </dl>
+                            <ul class="hero_option_list about_slider_mod">
+                              <li class="hero_option_item about_slider_mod">
+                                <dl class="hero_option_dl about_slider_mod">
+                                  <dt class="hero_option_title about_slider_mod">Faction</dt>
+                                  <dd class="hero_option_def about_slider_mod">The Dire</dd>
+                                </dl>
+                              </li>
+                              <li class="hero_option_item about_slider_mod">
+                                <dl class="hero_option_dl about_slider_mod">
+                                  <dt class="hero_option_title about_slider_mod">Primary Attribute:</dt>
+                                  <dd class="hero_option_def about_slider_mod">Intelligence</dd>
+                                </dl>
+                              </li>
+                              <li class="hero_option_item about_slider_mod">
+                                <dl class="hero_option_dl about_slider_mod">
+                                  <dt class="hero_option_title about_slider_mod">Attack Type:</dt>
+                                  <dd class="hero_option_def about_slider_mod">Ranged</dd>
+                                </dl>
+                              </li>
+                              <li class="hero_option_item about_slider_mod">
+                                <dl class="hero_option_dl about_slider_mod">
+                                  <dt class="hero_option_title about_slider_mod">Role(s):</dt>
+                                  <dd class="hero_option_def about_slider_mod">support</dd>
+                                </dl>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="about_hero_slider_item">
+                        <div class="about_hero_slider_block">
+                          <div class="about_hero_i_w strength_mod"><img alt="" src="i/heroes/hero_big_1.jpg" class="about_hero_i"/></div>
+                          <div class="about_hero_info">
+                            <dl class="about_hero_info_dl">
+                              <dt class="hero_name about_slider_mod">Winter Wyvern</dt>
+                              <dd class="hero_status about_slider_mod">Auroth</dd>
+                            </dl>
+                            <ul class="hero_option_list about_slider_mod">
+                              <li class="hero_option_item about_slider_mod">
+                                <dl class="hero_option_dl about_slider_mod">
+                                  <dt class="hero_option_title about_slider_mod">Faction</dt>
+                                  <dd class="hero_option_def about_slider_mod">The Dire</dd>
+                                </dl>
+                              </li>
+                              <li class="hero_option_item about_slider_mod">
+                                <dl class="hero_option_dl about_slider_mod">
+                                  <dt class="hero_option_title about_slider_mod">Primary Attribute:</dt>
+                                  <dd class="hero_option_def about_slider_mod">Intelligence</dd>
+                                </dl>
+                              </li>
+                              <li class="hero_option_item about_slider_mod">
+                                <dl class="hero_option_dl about_slider_mod">
+                                  <dt class="hero_option_title about_slider_mod">Attack Type:</dt>
+                                  <dd class="hero_option_def about_slider_mod">Ranged</dd>
+                                </dl>
+                              </li>
+                              <li class="hero_option_item about_slider_mod">
+                                <dl class="hero_option_dl about_slider_mod">
+                                  <dt class="hero_option_title about_slider_mod">Role(s):</dt>
+                                  <dd class="hero_option_def about_slider_mod">support</dd>
+                                </dl>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="about_hero_slider_item">
+                        <div class="about_hero_slider_block">
+                          <div class="about_hero_i_w strength_mod"><img alt="" src="i/heroes/hero_big_1.jpg" class="about_hero_i"/></div>
+                          <div class="about_hero_info">
+                            <dl class="about_hero_info_dl">
+                              <dt class="hero_name about_slider_mod">Winter Wyvern</dt>
+                              <dd class="hero_status about_slider_mod">Auroth</dd>
+                            </dl>
+                            <ul class="hero_option_list about_slider_mod">
+                              <li class="hero_option_item about_slider_mod">
+                                <dl class="hero_option_dl about_slider_mod">
+                                  <dt class="hero_option_title about_slider_mod">Faction</dt>
+                                  <dd class="hero_option_def about_slider_mod">The Dire</dd>
+                                </dl>
+                              </li>
+                              <li class="hero_option_item about_slider_mod">
+                                <dl class="hero_option_dl about_slider_mod">
+                                  <dt class="hero_option_title about_slider_mod">Primary Attribute:</dt>
+                                  <dd class="hero_option_def about_slider_mod">Intelligence</dd>
+                                </dl>
+                              </li>
+                              <li class="hero_option_item about_slider_mod">
+                                <dl class="hero_option_dl about_slider_mod">
+                                  <dt class="hero_option_title about_slider_mod">Attack Type:</dt>
+                                  <dd class="hero_option_def about_slider_mod">Ranged</dd>
+                                </dl>
+                              </li>
+                              <li class="hero_option_item about_slider_mod">
+                                <dl class="hero_option_dl about_slider_mod">
+                                  <dt class="hero_option_title about_slider_mod">Role(s):</dt>
+                                  <dd class="hero_option_def about_slider_mod">support</dd>
+                                </dl>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                    <ul id="about_hero_thumbs_1" class="about_hero_thumb_list">
+                      <li class="about_hero_thumb_item"><a href="" data-slide-index="0" class="hero_block thumb_mod strength_mod"><img alt="" src="i/heroes/hero_sm_1.jpg" class="hero_i thumb_mod"/></a></li>
+                      <li class="about_hero_thumb_item"><a href="" data-slide-index="1" class="hero_block thumb_mod agility_mod"><img alt="" src="i/heroes/hero_sm_2.jpg" class="hero_i thumb_mod"/></a></li>
+                      <li class="about_hero_thumb_item"><a href="" data-slide-index="2" class="hero_block thumb_mod strength_mod"><img alt="" src="i/heroes/hero_sm_3.jpg" class="hero_i thumb_mod"/></a></li>
+                      <li class="about_hero_thumb_item"><a href="" data-slide-index="3" class="hero_block thumb_mod intel_mod"><img alt="" src="i/heroes/hero_sm_4.jpg" class="hero_i thumb_mod"/></a></li>
+                    </ul>
+                  </div>
+                  <div class="see_more_butt_w about_hero_mod"><a href="#" class="see_more_butt">See more...</a></div>
+                </div>
+                <div class="main_section_block_in half_mod">
+                  <h2 class="main_section_title">Counters</h2>
+                  <div class="about_hero_slider_w">
+                    <ul id="about_hero_slider_2" class="about_hero_slider_list">
+                      <li class="about_hero_slider_item">
+                        <div class="about_hero_slider_block">
+                          <div class="about_hero_i_w intel_mod"><img alt="" src="i/heroes/hero_big_2.jpg" class="about_hero_i"/></div>
+                          <div class="about_hero_info">
+                            <dl class="about_hero_info_dl">
+                              <dt class="hero_name about_slider_mod">Terrorblade</dt>
+                              <dd class="hero_status about_slider_mod">The Demon Marauder</dd>
+                            </dl>
+                            <ul class="hero_option_list about_slider_mod">
+                              <li class="hero_option_item about_slider_mod">
+                                <dl class="hero_option_dl about_slider_mod">
+                                  <dt class="hero_option_title about_slider_mod">Faction</dt>
+                                  <dd class="hero_option_def about_slider_mod">The Dire</dd>
+                                </dl>
+                              </li>
+                              <li class="hero_option_item about_slider_mod">
+                                <dl class="hero_option_dl about_slider_mod">
+                                  <dt class="hero_option_title about_slider_mod">Primary Attribute:</dt>
+                                  <dd class="hero_option_def about_slider_mod">Agility</dd>
+                                </dl>
+                              </li>
+                              <li class="hero_option_item about_slider_mod">
+                                <dl class="hero_option_dl about_slider_mod">
+                                  <dt class="hero_option_title about_slider_mod">Attack Type:</dt>
+                                  <dd class="hero_option_def about_slider_mod">Melee</dd>
+                                </dl>
+                              </li>
+                              <li class="hero_option_item about_slider_mod">
+                                <dl class="hero_option_dl about_slider_mod">
+                                  <dt class="hero_option_title about_slider_mod">Role(s):</dt>
+                                  <dd class="hero_option_def about_slider_mod">carry</dd>
+                                </dl>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="about_hero_slider_item">
+                        <div class="about_hero_slider_block">
+                          <div class="about_hero_i_w intel_mod"><img alt="" src="i/heroes/hero_big_2.jpg" class="about_hero_i"/></div>
+                          <div class="about_hero_info">
+                            <dl class="about_hero_info_dl">
+                              <dt class="hero_name about_slider_mod">Terrorblade</dt>
+                              <dd class="hero_status about_slider_mod">The Demon Marauder</dd>
+                            </dl>
+                            <ul class="hero_option_list about_slider_mod">
+                              <li class="hero_option_item about_slider_mod">
+                                <dl class="hero_option_dl about_slider_mod">
+                                  <dt class="hero_option_title about_slider_mod">Faction</dt>
+                                  <dd class="hero_option_def about_slider_mod">The Dire</dd>
+                                </dl>
+                              </li>
+                              <li class="hero_option_item about_slider_mod">
+                                <dl class="hero_option_dl about_slider_mod">
+                                  <dt class="hero_option_title about_slider_mod">Primary Attribute:</dt>
+                                  <dd class="hero_option_def about_slider_mod">Agility</dd>
+                                </dl>
+                              </li>
+                              <li class="hero_option_item about_slider_mod">
+                                <dl class="hero_option_dl about_slider_mod">
+                                  <dt class="hero_option_title about_slider_mod">Attack Type:</dt>
+                                  <dd class="hero_option_def about_slider_mod">Melee</dd>
+                                </dl>
+                              </li>
+                              <li class="hero_option_item about_slider_mod">
+                                <dl class="hero_option_dl about_slider_mod">
+                                  <dt class="hero_option_title about_slider_mod">Role(s):</dt>
+                                  <dd class="hero_option_def about_slider_mod">carry</dd>
+                                </dl>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="about_hero_slider_item">
+                        <div class="about_hero_slider_block">
+                          <div class="about_hero_i_w intel_mod"><img alt="" src="i/heroes/hero_big_2.jpg" class="about_hero_i"/></div>
+                          <div class="about_hero_info">
+                            <dl class="about_hero_info_dl">
+                              <dt class="hero_name about_slider_mod">Terrorblade</dt>
+                              <dd class="hero_status about_slider_mod">The Demon Marauder</dd>
+                            </dl>
+                            <ul class="hero_option_list about_slider_mod">
+                              <li class="hero_option_item about_slider_mod">
+                                <dl class="hero_option_dl about_slider_mod">
+                                  <dt class="hero_option_title about_slider_mod">Faction</dt>
+                                  <dd class="hero_option_def about_slider_mod">The Dire</dd>
+                                </dl>
+                              </li>
+                              <li class="hero_option_item about_slider_mod">
+                                <dl class="hero_option_dl about_slider_mod">
+                                  <dt class="hero_option_title about_slider_mod">Primary Attribute:</dt>
+                                  <dd class="hero_option_def about_slider_mod">Agility</dd>
+                                </dl>
+                              </li>
+                              <li class="hero_option_item about_slider_mod">
+                                <dl class="hero_option_dl about_slider_mod">
+                                  <dt class="hero_option_title about_slider_mod">Attack Type:</dt>
+                                  <dd class="hero_option_def about_slider_mod">Melee</dd>
+                                </dl>
+                              </li>
+                              <li class="hero_option_item about_slider_mod">
+                                <dl class="hero_option_dl about_slider_mod">
+                                  <dt class="hero_option_title about_slider_mod">Role(s):</dt>
+                                  <dd class="hero_option_def about_slider_mod">carry</dd>
+                                </dl>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="about_hero_slider_item">
+                        <div class="about_hero_slider_block">
+                          <div class="about_hero_i_w intel_mod"><img alt="" src="i/heroes/hero_big_2.jpg" class="about_hero_i"/></div>
+                          <div class="about_hero_info">
+                            <dl class="about_hero_info_dl">
+                              <dt class="hero_name about_slider_mod">Terrorblade</dt>
+                              <dd class="hero_status about_slider_mod">The Demon Marauder</dd>
+                            </dl>
+                            <ul class="hero_option_list about_slider_mod">
+                              <li class="hero_option_item about_slider_mod">
+                                <dl class="hero_option_dl about_slider_mod">
+                                  <dt class="hero_option_title about_slider_mod">Faction</dt>
+                                  <dd class="hero_option_def about_slider_mod">The Dire</dd>
+                                </dl>
+                              </li>
+                              <li class="hero_option_item about_slider_mod">
+                                <dl class="hero_option_dl about_slider_mod">
+                                  <dt class="hero_option_title about_slider_mod">Primary Attribute:</dt>
+                                  <dd class="hero_option_def about_slider_mod">Agility</dd>
+                                </dl>
+                              </li>
+                              <li class="hero_option_item about_slider_mod">
+                                <dl class="hero_option_dl about_slider_mod">
+                                  <dt class="hero_option_title about_slider_mod">Attack Type:</dt>
+                                  <dd class="hero_option_def about_slider_mod">Melee</dd>
+                                </dl>
+                              </li>
+                              <li class="hero_option_item about_slider_mod">
+                                <dl class="hero_option_dl about_slider_mod">
+                                  <dt class="hero_option_title about_slider_mod">Role(s):</dt>
+                                  <dd class="hero_option_def about_slider_mod">carry</dd>
+                                </dl>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                    <ul id="about_hero_thumbs_2" class="about_hero_thumb_list">
+                      <li class="about_hero_thumb_item"><a href="" data-slide-index="0" class="hero_block thumb_mod strength_mod"><img alt="" src="i/heroes/hero_sm_5.jpg" class="hero_i thumb_mod"/></a></li>
+                      <li class="about_hero_thumb_item"><a href="" data-slide-index="1" class="hero_block thumb_mod agility_mod"><img alt="" src="i/heroes/hero_sm_6.jpg" class="hero_i thumb_mod"/></a></li>
+                      <li class="about_hero_thumb_item"><a href="" data-slide-index="2" class="hero_block thumb_mod strength_mod"><img alt="" src="i/heroes/hero_sm_7.jpg" class="hero_i thumb_mod"/></a></li>
+                      <li class="about_hero_thumb_item"><a href="" data-slide-index="3" class="hero_block thumb_mod intel_mod"><img alt="" src="i/heroes/hero_sm_8.jpg" class="hero_i thumb_mod"/></a></li>
+                    </ul>
+                  </div>
+                  <div class="see_more_butt_w about_hero_mod"><a href="#" class="see_more_butt">See more...</a></div>
+                </div>
+              </div>
+            </li>
+            <li class="main_section_item">
+              <div class="main_section_block bot_mod">
+                <ul class="news_list">
+                  <li class="news_item">
+                    <article class="news_block"><a href="#" class="news_title">Next App Update — Recommended builds</a><span class="news_date">Jun 14, 2az015</span>
+                      <div class="news_text">
+                        <p>Vote for this announcement (button "Rate up") if you want to see this feature in the app asap.We appreciate each your vote. Don't hesitate to vote in a few polls.</p>
+                      </div>
+                    </article>
+                  </li>
+                  <li class="news_item">
+                    <article class="news_block"><a href="#" class="news_title">Multiple Item builds were added in the new version of BuilDota2 App.</a><span class="news_date">Jun 10, 2015</span>
+                      <div class="news_text">
+                        <p>Now it is even more simple to create cool hero build with item builds for every stage of the game and also custom ones...</p>
+                      </div>
+                    </article>
+                  </li>
+                  <li class="news_item">
+                    <article class="news_block"><a href="#" class="news_title">Dota2 Google+ Community Cup Season 3 almost here!</a><span class="news_date">Jun 1, 2015</span>
+                      <div class="news_text">
+                        <p>Only few hours left till the massacre begin! You can find it in Amauter section, region Europe. There will be no NaVi or EG, but you will find tons of positive and fun ;) Join and enjoy!</p>
+                      </div>
+                    </article>
+                  </li>
+                  <li class="news_item">
+                    <article class="news_block"><a href="#" class="news_title">Meet the first spring "BuilDota2" application update:</a><span class="news_date">May 15, 2015</span>
+                      <div class="news_text">
+                        <p>Hi folks! App link - <a href="#">https://play.google.com/store/apps/details?id=com.buildota2.android.lite</a></p>
+                        <p>What's new...</p>
+                      </div>
+                    </article>
+                  </li>
+                </ul>
+                <div class="news_more_butt_w"><a href="#" class="news_more_butt">All news</a></div>
+              </div>
+            </li>
+          </ul>
+        </main>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer_first_row">
+        <div class="footer_first_row_in">
+          <ul class="footer_menu">
+            <li class="footer_menu_item">
+              <div class="footer_menu_block"><span class="footer_menu_title">Tops</span>
+                <ul class="footer_menu_sub">
+                  <li class="footer_menu_subitem"><a href="#" class="footer_menu_link">Top heroes</a></li>
+                  <li class="footer_menu_subitem"><a href="#" class="footer_menu_link">Top Builds</a></li>
+                  <li class="footer_menu_subitem"><a href="#" class="footer_menu_link">Top Guides</a></li>
+                  <li class="footer_menu_subitem"><a href="#" class="footer_menu_link">Top Allies&Counters</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="footer_menu_item">
+              <div class="footer_menu_block"><span class="footer_menu_title">Company</span>
+                <ul class="footer_menu_sub">
+                  <li class="footer_menu_subitem"><a href="#" class="footer_menu_link">About</a></li>
+                  <li class="footer_menu_subitem"><a href="#" class="footer_menu_link">News&Events</a></li>
+                  <li class="footer_menu_subitem"><a href="#" class="footer_menu_link">Contacts</a></li>
+                  <li class="footer_menu_subitem"><a href="#" class="footer_menu_link">Reviews</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="footer_menu_item">
+              <div class="footer_menu_block"><span class="footer_menu_title">For Users</span>
+                <ul class="footer_menu_sub">
+                  <li class="footer_menu_subitem"><a href="#" class="footer_menu_link">Download</a></li>
+                  <li class="footer_menu_subitem"><a href="#" class="footer_menu_link">Donate</a></li>
+                  <li class="footer_menu_subitem"><a href="#" class="footer_menu_link">FAQ</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <ul class="footer_cont">
+            <li class="footer_cont_item">
+              <div class="footer_cont_block">
+                <ul class="social_list">
+                  <li class="social_item"><a href="#" class="social_link tw_mod">Twitter</a></li>
+                  <li class="social_item"><a href="#" class="social_link vk_mod">VK</a></li>
+                  <li class="social_item"><a href="#" class="social_link face_mod">Facebook</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="footer_cont_item"><a href="#" class="footer_cont_block">
+                <div class="steam_i_w"><img alt="" src="i/steam.png" class="steam_i"/></div></a></li>
+            <li class="footer_cont_item"><a href="#" class="footer_cont_block">
+                <div class="google_pl_i_w"><img alt="" src="i/google_play.png" class="google_pl_i"/></div></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer_sec_row">
+        <div class="footer_sec_row_in">
+          <address class="foot_address"><span class="address_text">Designed by</span> <a href="#" class="address_link">UHDesign</a>
+          </address>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

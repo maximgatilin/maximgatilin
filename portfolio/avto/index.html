@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Title of the page</title>
+    <meta name="viewport" content="width=device-width"/>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <script src="js/mapInit.js"></script>
+    <script src="js/main.js"></script><!--[if gt IE 9]><!--><link rel="stylesheet" media="all" href="styles/main_global.css"><!--<![endif]-->
+    <!--[if lte IE 9]><link rel="stylesheet" media="all" href="styles/ie_9_global.css"><![endif]-->
+  </head>
+  <body>
+    <header class="header">
+      <div class="header_row">
+        <div class="header_row_in"><a href="#" class="logo_w header_mod"><img alt="" src="i/logo.png" class="logo_i header_mod"/></a></div>
+      </div>
+      <div class="head_menu_trigger">
+        <div id="user_menu_butt" class="user_menu_butt"><span class="user_menu_butt_decor"></span></div>
+      </div>
+      <div class="header_nav_w">
+        <nav class="nav_block header_mod">
+          <ul class="nav_menu_list header_mod">
+            <li class="nav_item header_mod"><a href="#" class="nav_link header_mod home_mod">Главная</a></li>
+            <li class="nav_item header_mod"><a href="#" class="nav_link header_mod action_mod">Акции</a></li>
+            <li class="nav_item header_mod"><a href="#" class="nav_link header_mod cont_mod">Контакты</a></li>
+          </ul>
+          <div class="phone_link_w header_mod"><a href="tel:+74957652221" class="phone_link header_mod">+7 (495)<span class="bold"> 765 22 21</span></a></div>
+        </nav>
+      </div>
+    </header>
+    <div class="wrapper">
+      <div class="base">
+        <div class="home_slider_w">
+          <ul id="home_slider_list" class="home_slider_list">
+            <li class="home_slider_item">
+              <div class="home_slider_item_in"><img alt="" src="i/slider_1.jpg" class="home_slider_img">
+                <div class="home_slider_text splitTarget">Скидки до 10% в июне на ремонт машин премиум класса</div><a href="#" class="home_slider_butt">Узнать подробнее</a>
+              </div>
+            </li>
+            <li class="home_slider_item">
+              <div class="home_slider_item_in"><img alt="" src="i/slider_2.jpg" class="home_slider_img">
+                <div class="home_slider_text splitTarget">Скидки до 10% в июне на ремонт машин премиум класса</div><a href="#" class="home_slider_butt">Узнать подробнее</a>
+              </div>
+            </li>
+            <li class="home_slider_item">
+              <div class="home_slider_item_in"><img alt="" src="i/slider_3.jpg" class="home_slider_img">
+                <div class="home_slider_text splitTarget">Скидки до 10% в июне на ремонт машин премиум класса</div><a href="#" class="home_slider_butt">Узнать подробнее</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <nav class="nav_block page_mod">
+          <ul class="nav_menu_list page_mod">
+            <li class="nav_item page_mod"><a href="#" class="nav_link page_mod price_mod">
+                <div class="nav_link_in page_mod">
+                  <div class="nav_link_icon page_mod">
+                    <svg class="nav_link_svg_i" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    	width="128px" height="128px" viewBox="0 0 128 128" enable-background="new 0 0 128 128" xml:space="preserve">
+                    <g>
+                    	<path d="M106.828,12.799l-0.018,0.018C99.365,6.119,67.549-0.248,60.35,6.95L16.172,51.128c-7.13,7.131-8.147,17.381-2.638,22.891
+                    		l15.998,15.998l15.998,15.998c5.51,5.511,15.854,4.553,22.985-2.578l44.178-44.178C119.893,52.06,113.525,20.243,106.828,12.799z
+                    		M65.688,100.607c-5.401,5.402-13.42,6.487-17.329,2.579L32.361,87.188L16.363,71.19C12.454,67.281,13.599,59.358,19,53.957
+                    		L63.179,9.778c5.008-5.008,34.907,0.449,40.975,5.695l0.018-0.018c5.953,6.775,10.702,35.966,5.694,40.974L65.688,100.607z"/>
+                    	<g>
+                    		<path d="M83.75,43.759c-4.922,0-8.926-4.004-8.926-8.926s4.004-8.926,8.926-8.926s8.926,4.004,8.926,8.926
+                    			S88.672,43.759,83.75,43.759z M83.75,29.908c-2.717,0-4.926,2.209-4.926,4.926s2.209,4.926,4.926,4.926s4.926-2.209,4.926-4.926
+                    			S86.467,29.908,83.75,29.908z"/>
+                    	</g>
+                    	<path d="M111.949,64.061c-0.104,3.929-0.739,7.024-2.084,8.369l-44.178,44.178c-5.401,5.402-13.42,6.487-17.329,2.579
+                    		l-15.998-15.998L16.363,87.19c-1.446-1.446-2.196-3.442-2.299-5.657l-3.995,0.713c0.254,2.98,1.402,5.709,3.465,7.772
+                    		l15.998,15.998l15.998,15.998c5.51,5.511,15.854,4.553,22.985-2.578l44.178-44.178c2.172-2.171,3.102-6.59,3.168-11.896
+                    		L111.949,64.061z"/>
+                    </g>
+                    </svg>
+                  </div><span class="nav_link_text page_mod">Цена на услуги</span>
+                </div></a></li>
+            <li class="nav_item page_mod"><a href="#" class="nav_link page_mod works_mod">
+                <div class="nav_link_in page_mod">
+                  <div class="nav_link_icon page_mod">
+                    <svg class="nav_link_svg_i" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    	width="128px" height="128px" viewBox="0 0 128 128" enable-background="new 0 0 128 128" xml:space="preserve">
+                    <g>
+                    	<path d="M123,15.585c0-2.75-2.211-4.581-4.912-4.068l-50.176,9.516c-2.701,0.512-7.123,0.512-9.824,0L7.912,11.517
+                    		C5.211,11.004,3,12.835,3,15.585v92.071c0,2.75,2.211,5.42,4.912,5.932l48.176,9.137c2.701,0.512,11.123,0.512,13.824,0
+                    		l48.176-9.137c2.701-0.512,4.912-3.182,4.912-5.932V15.585z M11.912,110.275C9.211,109.764,7,107.094,7,104.344V20.415
+                    		c0-2.75,2.211-4.581,4.912-4.068l44.176,8.378C58.789,25.237,61,27.906,61,30.656v83.929c0,2.75-2.211,4.581-4.912,4.068
+                    		L11.912,110.275z M119,104.344c0,2.75-2.211,5.42-4.912,5.932l-44.176,8.378c-2.701,0.513-4.912-1.318-4.912-4.068V30.656
+                    		c0-2.75,2.211-5.419,4.912-5.932l44.176-8.378c2.701-0.512,4.912,1.318,4.912,4.068V104.344z"/>
+                    	<g>
+                    		<path d="M78.041,61.642L78.041,61.642c-3.444,0-6.041-2.654-6.041-6.173V40.369c0-3.737,2.879-7.196,6.554-7.875l27.166-5.02
+                    			c0.413-0.076,0.83-0.115,1.239-0.115c3.444,0,6.041,2.654,6.041,6.173v15.099c0,3.737-2.879,7.196-6.554,7.875l-27.166,5.02
+                    			C78.867,61.603,78.45,61.642,78.041,61.642z M106.959,31.358c-0.166,0-0.338,0.017-0.513,0.049l-27.166,5.02
+                    			C77.533,36.75,76,38.592,76,40.369v15.099c0,1.477,1.094,2.393,2.554,2.125l27.166-5.02c1.747-0.323,3.28-2.165,3.28-3.942V33.532
+                    			C109,32.232,108.18,31.358,106.959,31.358z"/>
+                    	</g>
+                    	<g>
+                    		<path d="M73.998,78.369c-0.946,0-1.787-0.674-1.965-1.637c-0.2-1.086,0.518-2.129,1.604-2.33l37-6.838
+                    			c1.09-0.201,2.13,0.518,2.33,1.604s-0.518,2.13-1.604,2.33l-37,6.838C74.24,78.358,74.118,78.369,73.998,78.369z"/>
+                    	</g>
+                    	<g>
+                    		<path d="M73.998,101.369c-0.946,0-1.787-0.674-1.965-1.637c-0.2-1.086,0.518-2.129,1.604-2.33l37-6.838
+                    			c1.09-0.2,2.13,0.518,2.33,1.604s-0.518,2.13-1.604,2.33l-37,6.838C74.24,101.358,74.118,101.369,73.998,101.369z"/>
+                    	</g>
+                    	<g>
+                    		<path d="M54.002,88.369c-0.12,0-0.242-0.012-0.365-0.033l-37-6.838c-1.086-0.201-1.804-1.244-1.604-2.33s1.237-1.804,2.33-1.604
+                    			l37,6.838c1.086,0.2,1.804,1.244,1.604,2.33C55.789,87.695,54.948,88.369,54.002,88.369z"/>
+                    	</g>
+                    	<g>
+                    		<path d="M54.002,65.369c-0.12,0-0.242-0.012-0.365-0.033l-37-6.838c-1.086-0.201-1.804-1.244-1.604-2.33s1.237-1.805,2.33-1.604
+                    			l37,6.837c1.086,0.201,1.804,1.244,1.604,2.33C55.789,64.695,54.948,65.369,54.002,65.369z"/>
+                    	</g>
+                    	<g>
+                    		<path d="M54.002,41.369c-0.12,0-0.242-0.011-0.365-0.034l-37-6.837c-1.086-0.201-1.804-1.244-1.604-2.33s1.237-1.804,2.33-1.604
+                    			l37,6.837c1.086,0.201,1.804,1.244,1.604,2.33C55.789,40.695,54.948,41.369,54.002,41.369z"/>
+                    	</g>
+                    </g>
+                    </svg>
+                  </div><span class="nav_link_text page_mod">Примеры работ</span>
+                </div></a></li>
+            <li class="nav_item page_mod"><a href="#" class="nav_link page_mod comp_mod">
+                <div class="nav_link_in page_mod">
+                  <div class="nav_link_icon page_mod">
+                    <svg class="nav_link_svg_i" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    	width="128px" height="128px" viewBox="0 0 128 128" enable-background="new 0 0 128 128" xml:space="preserve">
+                    <defs>
+                    <linearGradient id="st_gradient" x1="1" y1="0" x2="0" y2="1">
+                    	<stop style="stop-color:rgba(4,104,255,.5)" offset="0%"/>
+                    	<stop style="stop-color:rgba(240,22,94,.5)" offset="100%"/>
+                    </linearGradient>
+                    </defs>
+                    <path d="M122.269,56.853c0.091-2.452,0.217-13.403-4.45-19.16c-5.281-6.516-32.309,0.306-37.402,1.538l2.766,1.983
+                    	c13.468-3.259,29.063-4.418,31.5-1.411C118.414,44.407,118.343,55,118.272,56h-0.019c0.001,0,0.006,0.354,0.011,0.488
+                    	c-0.006,0.149-0.011,0.512-0.011,0.512h0.02c0.07,2,0.142,11.959-3.59,16.563c-2.439,3.007-18.033,2.188-31.5-1.071l-2.766,1.996
+                    	c5.092,1.232,32.119,8.061,37.4,1.545C122.503,70.256,122.359,59.251,122.269,56.853z"/>
+                    <path d="M5.444,56.853C5.353,54.4,5.228,43.45,9.895,37.692c5.281-6.516,32.309,0.306,37.401,1.538l-2.766,1.983
+                    	c-13.467-3.259-29.062-4.418-31.5-1.411C9.299,44.407,9.37,55,9.44,56h0.018c0,0-0.005,0.354-0.01,0.488
+                    	C9.454,56.637,9.459,57,9.459,57h-0.02c-0.07,2-0.142,11.959,3.59,16.563c2.438,3.007,18.033,2.188,31.5-1.071l2.766,1.996
+                    	c-5.093,1.232-32.12,8.061-37.401,1.545C5.21,70.256,5.353,59.251,5.444,56.853z"/>
+                    <path d="M105.898,83c-3.992,7.962-9.262,16.135-11.746,16.662c-7.939,1.68-19.749-9.365-26.512-16.662
+                    	c-1.442-1.557-2.66-2.945-3.556-4h-1.602c-0.896,1.055-2.114,2.443-3.556,4c-6.763,7.297-18.572,18.342-26.512,16.662
+                    	c-2.49-0.527-7.779-8.69-11.774-16.662h-4.444c2.464,5.144,9.707,19.267,15.39,20.471c0.813,0.173,1.641,0.246,2.484,0.246
+                    	c10.913,0,23.961-13.627,29.214-19.672c5.253,6.045,18.301,19.667,29.214,19.667c0.843,0,1.672-0.082,2.484-0.255
+                    	c5.672-1.202,12.898-15.289,15.375-20.457H105.898z"/>
+                    <g>
+                    	<path d="M68,75h-8c-7.72,0-14-6.28-14-14v-9c0-7.72,6.28-14,14-14h8c7.72,0,14,6.28,14,14v9C82,68.72,75.72,75,68,75z M60,42
+                    		c-5.514,0-10,4.486-10,10v9c0,5.514,4.486,10,10,10h8c5.514,0,10-4.486,10-10v-9c0-5.514-4.486-10-10-10H60z"/>
+                    </g>
+                    </svg>
+                  </div><span class="nav_link_text page_mod">О компании</span>
+                </div></a></li>
+            <li class="nav_item page_mod"><a href="#" class="nav_link page_mod gal_mod">
+                <div class="nav_link_in page_mod">
+                  <div class="nav_link_icon page_mod">
+                    <svg class="nav_link_svg_i" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    	width="128px" height="128px" viewBox="0 0 128 128" enable-background="new 0 0 128 128" xml:space="preserve">
+                    <g>
+                    	<g>
+                    		<path d="M88.455,114.758c-0.838,0-1.721-0.223-2.624-0.663l-18.214-8.882c-1.828-0.892-5.406-0.892-7.234,0l-18.214,8.882
+                    			c-2.203,1.073-4.392,0.785-5.659-0.671c-0.621-0.715-1.299-2.017-0.997-4.164l2.818-20.068c0.298-2.123-0.747-5.339-2.235-6.881
+                    			L22.02,67.732c-1.441-1.492-1.977-3.243-1.47-4.803c0.507-1.56,1.969-2.661,4.012-3.022l19.957-3.521
+                    			c2.112-0.373,4.847-2.36,5.854-4.252l9.515-17.891c0.974-1.832,2.473-2.882,4.113-2.882s3.14,1.051,4.113,2.882l9.515,17.891
+                    			c1.007,1.893,3.741,3.88,5.854,4.252l19.957,3.521c2.043,0.361,3.505,1.462,4.012,3.022c0.507,1.56-0.028,3.311-1.47,4.803
+                    			L91.904,82.311c-1.488,1.542-2.533,4.758-2.235,6.881l2.818,20.067c0.302,2.147-0.376,3.45-0.997,4.165
+                    			C90.742,114.283,89.665,114.758,88.455,114.758z M24.336,64c0.032,0,0.138,0.411,0.561,0.851l14.076,14.63
+                    			c2.327,2.41,3.785,6.923,3.319,10.241l-2.818,20.081c-0.086,0.616,0.016,0.934,0.059,0.994c0.115-0.045,0.405-0.068,0.883-0.301
+                    			l18.214-8.881C60.093,100.902,62,100.51,64,100.51s3.907,0.395,5.371,1.107l18.214,8.882c0.76,0.371,0.957,0.25,0.957,0.251
+                    			c-0.031-0.007,0.07-0.318-0.016-0.936l-2.818-20.066c-0.466-3.318,0.992-7.807,3.319-10.216l14.076-14.578
+                    			c0.433-0.448,0.533-0.76,0.534-0.834c-0.013,0.029-0.286-0.166-0.895-0.273l-19.957-3.521c-3.3-0.583-7.117-3.356-8.689-6.314
+                    			l-9.515-17.891c-0.293-0.55-0.559-0.742-0.628-0.766c0.022,0.024-0.243,0.216-0.536,0.766l-9.515,17.891
+                    			c-1.572,2.958-5.39,5.731-8.689,6.314l-19.957,3.417C24.643,63.852,24.379,64,24.334,64C24.335,64,24.336,64,24.336,64z"/>
+                    	</g>
+                    	<path d="M111,3H17C9.28,3,3,9.28,3,17v94c0,7.72,6.28,14,14,14h94c7.72,0,14-6.28,14-14V17C125,9.28,118.72,3,111,3z M17,7h94
+                    		c5.514,0,10,4.486,10,10v2H7v-2C7,11.486,11.486,7,17,7z M111,121H17c-5.514,0-10-4.486-10-10V23h114v88
+                    		C121,116.514,116.514,121,111,121z"/>
+                    	<g>
+                    		<circle cx="37.125" cy="13.125" r="2.875"/>
+                    	</g>
+                    	<g>
+                    		<circle cx="27.125" cy="13.125" r="2.875"/>
+                    	</g>
+                    	<g>
+                    		<circle cx="17.125" cy="13.125" r="2.875"/>
+                    	</g>
+                    </g>
+                    </svg>
+                  </div><span class="nav_link_text page_mod">Галерея</span>
+                </div></a></li>
+          </ul>
+        </nav>
+        <div class="photo_price_w">
+          <div class="content_block st_mod">
+            <div class="photo_price_block">
+              <h2 class="photo_price_title">Оценка стоимости ремонта по фотографии</h2>
+              <form class="photo_att_form"><span class="form_att_text">Отправьте нам фотографии повреждений на наш почтовый ящик <a href="#" class="att_text_link">demage@kuzrem.ru</a> или с помощью формы и мы сообщим вам примерную стоимость</span>
+                <div class="photo_att_target"><span class="photo_att_target_text">перетащите фотографии сюда или кликните на ссылку загрузить фото</span><a href="#" class="form_att_upload_link mobile_mod">Загрузить фото</a></div>
+                <div class="form_att_ui"><a href="#" class="form_att_upload_link">Загрузить фото</a>
+                  <button class="form_att_next_butt">Далее</button>
+                </div>
+              </form>
+              <div class="photo_man_w"><img alt="" src="i/man_1.png" class="photo_man"></div>
+              <div class="form_att_step_block">шаг <span class="current_step">1</span> из <span class="all_steps">2</span> - загрузите фото</div>
+            </div>
+          </div>
+        </div>
+        <div class="serv_w home_mod">
+          <div class="serv_block home_mod">
+            <h2 class="serv_block_title home_mod">Наши услуги</h2>
+            <ul class="serv_list home_mod">
+              <li class="serv_item home_mod"><a href="#" class="serv_item_link home_mod mod_1">
+                  <div class="serv_item_in home_mod">
+                    <dl class="serv_dl home_mod">
+                      <dt class="serv_title home_mod">Кузовной ремонт и покраска автомобиля</dt>
+                      <dd class="serv_def home_mod">Данный вид ремонта включает в себя работу, проводимую с целью  устранения неисправностей вашего автомобиля.</dd>
+                    </dl><span class="serv_price home_mod">от 7000 руб.</span>
+                  </div></a></li>
+              <li class="serv_item home_mod"><a href="#" class="serv_item_link home_mod mod_2">
+                  <div class="serv_item_in home_mod">
+                    <dl class="serv_dl home_mod">
+                      <dt class="serv_title home_mod">Шиномонтаж,покраска дисков</dt>
+                      <dd class="serv_def home_mod">Данный вид ремонта включает в себя работу, проводимую с целью  устранения неисправностей вашего автомобиля.</dd>
+                    </dl><span class="serv_price home_mod">от 7000 руб.</span>
+                  </div></a></li>
+              <li class="serv_item home_mod"><a href="#" class="serv_item_link home_mod mod_3">
+                  <div class="serv_item_in home_mod">
+                    <dl class="serv_dl home_mod">
+                      <dt class="serv_title home_mod">Полировка,Нанесение защитных покрытий</dt>
+                      <dd class="serv_def home_mod">Данный вид ремонта включает в себя работу, проводимую с целью  устранения неисправностей вашего автомобиля.</dd>
+                    </dl><span class="serv_price home_mod">от 7000 руб.</span>
+                  </div></a></li>
+              <li class="serv_item home_mod"><a href="#" class="serv_item_link home_mod mod_4">
+                  <div class="serv_item_in home_mod">
+                    <dl class="serv_dl home_mod">
+                      <dt class="serv_title home_mod">Слесарный ремонт</dt>
+                      <dd class="serv_def home_mod">Данный вид ремонта включает в себя работу, проводимую с целью  устранения неисправностей вашего автомобиля.</dd>
+                    </dl><span class="serv_price home_mod">от 7000 руб.</span>
+                  </div></a></li>
+            </ul><a href="#" class="all_serv_butt home_mod">Все услуги и цены</a>
+          </div>
+        </div>
+        <div class="content_block st_mod">
+          <div class="brand_block">
+            <ul class="brand_list">
+              <li class="brand_item"><a href="#" class="brand_link"><img alt="" src="i/hyundai.png" class="brand_i"></a></li>
+              <li class="brand_item"><a href="#" class="brand_link"><img alt="" src="i/volvo.png" class="brand_i"></a></li>
+              <li class="brand_item"><a href="#" class="brand_link"><img alt="" src="i/mercedes.png" class="brand_i"></a></li>
+              <li class="brand_item"><a href="#" class="brand_link"><img alt="" src="i/citroen.png" class="brand_i"></a></li>
+              <li class="brand_item"><a href="#" class="brand_link"><img alt="" src="i/wolc.png" class="brand_i"></a></li>
+            </ul><a href="#" class="more_brand_butt">Подробнее о брендах</a>
+          </div>
+        </div>
+        <div class="adv_w">
+          <div class="adv_block">
+            <div class="adv_block_in">
+              <div class="adv_text">все работы проводятся в чистом и аккуратном помещении с соблюдением всех правил и норм</div><a href="#" class="adv_more_link">Посмотреть галерею</a>
+            </div>
+          </div>
+        </div>
+        <div class="content_block st_mod">
+          <div class="about_us_block">
+            <h2 class="about_us_title">О компании</h2>
+            <div class="about_us_info"><span class="about_us_head">Автосалон «РТР-Авто» - официальный дилер Хендай и Mitsubishi предлагает широкий ассортимент автомобилей этих популярных марок. У нас Вы можете не только купить новые автомобили Хендай или Митсубиси, но также произвести полную диагностику, ремонт и техническое обслуживание своего автомобиля. Мы осуществляем гарантийное и послегарантийное обслуживание, а также продажу оригинальных запчастей и аксессуаров.</span><span class="about_us_subtitle">Официальный дилер Hyundai предлагает полный комплекс услуг:</span>
+              <ul class="about_us_list">
+                <li class="about_us_item"><span class="about_us_item_in">Страхование и кредитование</span></li>
+                <li class="about_us_item"><span class="about_us_item_in">Продажа новых и подержанных автомобилей на самых выгодных и условиях,</span></li>
+                <li class="about_us_item"><span class="about_us_item_in">Выполнение профилактических и ремонтных работ любой степени сложности, тест-драйв.</span></li>
+                <li class="about_us_item"><span class="about_us_item_in">Установка дополнительного оборудования</span></li>
+              </ul><span class="about_us_total">Обратившись в наш сервисный центр, Вы получите своевременную и профессиональную помощь высококвалифицированных специалистов.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <nav class="nav_block footer_mod">
+          <ul class="nav_menu_list footer_mod">
+            <li class="nav_item footer_mod"><a href="#" class="nav_link footer_mod price_mod"><span class="nav_link_in footer_mod price_mod">Прайс лист на услуги</span></a></li>
+            <li class="nav_item footer_mod"><a href="#" class="nav_link footer_mod serv_mod"><span class="nav_link_in footer_mod serv_mod">Подробнее об услугах</span></a></li>
+            <li class="nav_item footer_mod"><a href="#" class="nav_link footer_mod photo_mod"><span class="nav_link_in footer_mod photo_mod">Оценка по фото</span></a></li>
+            <li class="nav_item footer_mod"><a href="#" class="nav_link footer_mod works_mod"><span class="nav_link_in footer_mod works_mod">Примеры работ</span></a></li>
+          </ul>
+        </nav>
+        <div class="footer_in">
+          <div class="footer_cont_block"><a href="#" class="logo_w footer_mod"><img alt="" src="i/logo_bw.png" class="logo_i footer_mod"/></a><a href="tel:+74957652221" class="phone_link footer_mod">+7 (495)<span class="bold"> 765 22 21</span></a>
+            <div class="address_info footer_mod">5 км Новорижского шоссе, напротив Тц «Глобус» <a href="#" class="address_link">смотреть на карте</a></div>
+          </div>
+          <div class="footer_info_block">
+            <div class="copyright_info">© 2015 Kuzern. Кузовной и слесарный ремонт автомобилей</div>
+            <div class="author_info">Сайт разработан в студии дизайна: <a href="#" class="author_link">Opencolour</a></div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

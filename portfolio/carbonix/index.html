@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Title of the page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="js/modernizr.2.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <script src="js/mapInit.js"></script>
+    <script src="js/fotorama.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" media="all" href="styles/main_global.css"/>
+  </head>
+  <body class="home_mod">
+    <header class="header">
+      <div class="header_row">
+      </div>
+      <div class="head_menu_trigger">
+        <div id="user_menu_butt" class="user_menu_butt"><span class="user_menu_butt_decor"></span></div>
+      </div>
+      <div class="head_dropdown_block">
+        <ul id="head_cat_list" class="head_cat_list">
+          <li class="head_cat_item">
+            <div class="head_cat_item_in"><span class="head_cat_title">Aerospace:</span>
+              <ul class="head_cat_sublist">
+                <li class="head_cat_subitem"><a href="#" class="head_cat_sublink">Conservation/Poaching patrol</a></li>
+                <li class="head_cat_subitem"><a href="#" class="head_cat_sublink">Law enforcement</a></li>
+                <li class="head_cat_subitem"><a href="#" class="head_cat_sublink">Pipline/Powerline inspection</a></li>
+                <li class="head_cat_subitem"><a href="#" class="head_cat_sublink">Agricultural surveying</a></li>
+                <li class="head_cat_subitem"><a href="#" class="head_cat_sublink">Mining surveying</a></li>
+                <li class="head_cat_subitem"><a href="#" class="head_cat_sublink">General surveillance</a></li>
+                <li class="head_cat_subitem"><a href="#" class="head_cat_sublink">Properity development/construction</a></li>
+                <li class="head_cat_subitem"><a href="#" class="head_cat_sublink">meteorogical measurment</a></li>
+                <li class="head_cat_subitem"><a href="#" class="head_cat_sublink">disaster / emergency assessment</a></li>
+                <li class="head_cat_subitem"><a href="#" class="head_cat_sublink">defence / military surveillance</a></li>
+                <li class="head_cat_subitem"><a href="#" class="head_cat_sublink">coastal patrol / shark watch</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="head_cat_item">
+            <div class="head_cat_item_in"><span class="head_cat_title">Marine:</span>
+              <ul class="head_cat_sublist">
+                <li class="head_cat_subitem"><a href="#" class="head_cat_sublink">A Class catamaran <strong>paradox v3</strong></a></li>
+                <li class="head_cat_subitem"><a href="#" class="head_cat_sublink">M CLASS RC YACHT <strong>KATAMARAN V2</strong></a></li>
+                <li class="head_cat_subitem"><a href="#" class="head_cat_sublink">IOM class rc yacht <strong>Blackiece v2</strong></a></li>
+                <li class="head_cat_subitem"><a href="#" class="head_cat_sublink">R10R class RC yacht <strong>Rubicon V3</strong></a></li>
+                <li class="head_cat_subitem"><a href="#" class="head_cat_sublink">Kayak</a></li>
+                <li class="head_cat_subitem"><a href="#" class="head_cat_sublink">Moth</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="head_cat_item">
+            <div class="head_cat_item_in"><span class="head_cat_title">Custom:</span>
+              <ul class="head_cat_sublist">
+                <li class="head_cat_subitem"><a href="#" class="head_cat_sublink">Design</a></li>
+                <li class="head_cat_subitem"><a href="#" class="head_cat_sublink">Tooling</a></li>
+                <li class="head_cat_subitem"><a href="#" class="head_cat_sublink">Matching</a></li>
+                <li class="head_cat_subitem"><a href="#" class="head_cat_sublink">Prototyping & production</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <nav class="header_nav">
+          <ul class="main_menu_list header_mod">
+            <li class="main_menu_item header_mod"><a href="#" class="main_menu_link header_mod">News/blog</a></li>
+            <li class="main_menu_item header_mod"><a href="#" class="main_menu_link header_mod">Team and story</a></li>
+            <li class="main_menu_item active_mod header_mod"><a href="#" class="main_menu_link header_mod">In the media</a></li>
+            <li class="main_menu_item header_mod"><a href="#" class="main_menu_link header_mod">Careers</a></li>
+            <li class="main_menu_item header_mod"><a href="#" class="main_menu_link header_mod">Online shop</a></li>
+            <li class="main_menu_item header_mod"><a href="#" class="main_menu_link header_mod">Past projects</a></li>
+            <li class="main_menu_item header_mod"><a href="#" class="main_menu_link header_mod">Parners</a></li>
+            <li class="main_menu_item header_mod"><a href="#" class="main_menu_link header_mod">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="wrapper">
+      <div class="base">
+        <div class="home_head_block">
+          <div class="home_head_block_in">
+            <div class="head_logo_w"><img alt="" src="i/logo.svg" class="head_logo_i"></div>
+            <div class="title_logo_w"><img alt="" src="i/title_logo_big.png" class="title_logo_i"></div>
+            <h1 class="home_head_title">Beauty and value throught technology and design</h1><a href="#" id="home_head_scroll_link" class="home_head_scroll_link">Our products</a>
+          </div>
+        </div>
+        <div id="offers_block" class="offers_block">
+          <ul class="offer_list">
+            <li class="offer_item gray_mod">
+              <div class="offer_item_in">
+                <h3 class="offer_title">Aerospace</h3>
+                <div class="offer_more_link_w"><a href="#" class="offer_more_link">see offer</a></div>
+                <ul class="offer_sub_list">
+                  <li class="offer_subitem"><a href="product.html" class="offer_sublink">Conservation/Poaching patrol</a></li>
+                  <li class="offer_subitem"><a href="product.html" class="offer_sublink">Law enforcement</a></li>
+                  <li class="offer_subitem"><a href="product.html" class="offer_sublink">Pipline/Powerline inspection</a></li>
+                  <li class="offer_subitem"><a href="product.html" class="offer_sublink">Agricultural surveying</a></li>
+                  <li class="offer_subitem"><a href="product.html" class="offer_sublink">Mining surveying</a></li>
+                  <li class="offer_subitem"><a href="product.html" class="offer_sublink">General surveillance</a></li>
+                  <li class="offer_subitem"><a href="product.html" class="offer_sublink">Properity development/construction</a></li>
+                  <li class="offer_subitem"><a href="product.html" class="offer_sublink">meteorogical measurment</a></li>
+                  <li class="offer_subitem"><a href="product.html" class="offer_sublink">disaster / emergency assessment</a></li>
+                  <li class="offer_subitem"><a href="product.html" class="offer_sublink">defence / military surveillance</a></li>
+                  <li class="offer_subitem"><a href="product.html" class="offer_sublink">coastal patrol / shark watch</a></li>
+                </ul>
+                <div class="offer_img_w"><img alt="" src="i/photos/photo_9.jpg" class="offer_img"></div>
+              </div>
+            </li>
+            <li class="offer_item black_mod">
+              <div class="offer_item_in">
+                <h3 class="offer_title">Marine</h3>
+                <div class="offer_more_link_w"><a href="product.html" class="offer_more_link">see offer</a></div>
+                <ul class="offer_sub_list">
+                  <li class="offer_subitem"><a href="product.html" class="offer_sublink">A Class catamaran <strong>paradox v3</strong></a></li>
+                  <li class="offer_subitem"><a href="product.html" class="offer_sublink">M CLASS RC YACHT <strong>KATAMARAN V2</strong></a></li>
+                  <li class="offer_subitem"><a href="product.html" class="offer_sublink">IOM class rc yacht <strong>Blackiece v2</strong></a></li>
+                  <li class="offer_subitem"><a href="product.html" class="offer_sublink">R10R class RC yacht <strong>Rubicon V3</strong></a></li>
+                  <li class="offer_subitem"><a href="product.html" class="offer_sublink">Kayak</a></li>
+                  <li class="offer_subitem"><a href="product.html" class="offer_sublink">Moth</a></li>
+                </ul>
+                <div class="offer_img_w"><img alt="" src="i/photos/photo_1.jpg" class="offer_img"></div>
+              </div>
+            </li>
+          </ul>
+          <div data-animation_name="offers" class="offers_solution_block animation_target">
+            <ul class="solution_list">
+              <li class="solution_item banner_mod">
+                <div class="solution_banner">WE ALSO OFFER CUSTOM SOLLUTIONS</div>
+              </li>
+              <li class="solution_item black_mod"><a href="custom.html" class="solution_block">
+                  <div class="solution_decor_overlay"></div>
+                  <div class="solution_decor_point"></div>
+                  <div class="solution_decor_line"></div>
+                  <div class="solution_decor_dotted"></div>
+                  <div class="solution_title">design</div></a></li>
+              <li class="solution_item dark_gray_mod"><a href="custom.html" class="solution_block">
+                  <div class="solution_decor_overlay"></div>
+                  <div class="solution_decor_point"></div>
+                  <div class="solution_decor_line"></div>
+                  <div class="solution_decor_dotted"></div>
+                  <div class="solution_title">prototype</div></a></li>
+              <li class="solution_item gray_mod"><a href="custom.html" class="solution_block">
+                  <div class="solution_decor_overlay"></div>
+                  <div class="solution_decor_point"></div>
+                  <div class="solution_decor_line"></div>
+                  <div class="solution_decor_dotted"></div>
+                  <div class="solution_title">engineer</div></a></li>
+              <li class="solution_item light_gray_mod"><a href="custom.html" class="solution_block">
+                  <div class="solution_decor_overlay"></div>
+                  <div class="solution_decor_point"></div>
+                  <div class="solution_decor_line"></div>
+                  <div class="solution_decor_dotted"></div>
+                  <div class="solution_title">production</div></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="adv_block">
+          <div data-animation_name="adv_title" class="adv_title_w animation_target">
+            <h2 class="adv_title section_title center_mod">Value of our products</h2>
+          </div>
+          <ul class="adv_list">
+            <li data-animation_name="adv_1" class="adv_item animation_target">
+              <div class="adv_item_in">
+                <div class="adv_main_text">ADVanced composite materials are making possible what was previously unimaginable</div>
+                <div class="adv_def_text">Offer a unique look associated with high performance and top quality</div>
+              </div>
+            </li>
+            <li data-animation_name="adv_2" class="adv_item animation_target">
+              <div class="adv_item_in">
+                <div class="adv_main_text">MODERN ENGINEERING</div>
+                <div class="adv_def_text">Morbi interdum ligula eget massa commodo, vel varius nunc tincidunt. Fusce a blandit orci. Donec vel est ipsum. Donec nec ipsum non purus fermentum ultrices scelerisque a mi. Maecenas laoreet justo eget luctus facilisis.</div>
+              </div>
+            </li>
+            <li data-animation_name="adv_3" class="adv_item animation_target">
+              <div class="adv_item_in">
+                <div class="adv_main_text">HIGH QUALITY DESIGN</div>
+                <div class="adv_def_text">Morbi interdum ligula eget massa commodo, vel varius nunc tincidunt. Fusce a blandit orci. Donec vel est ipsum. Donec nec ipsum non purus fermentum ultrices scelerisque a mi. Maecenas laoreet justo eget luctus facilisis.</div>
+              </div>
+            </li>
+          </ul>
+          <div data-animation_name="adv_cont_butt" class="adv_cont_butt_w animation_target"><a href="#" class="butt adv_cont_butt">Contact us<span class="butt_decor"></span></a></div>
+        </div>
+        <div class="assets_block">
+          <div data-animation_name="assets_title_w" class="assets_title_w animation_target">
+            <h2 class="section_title assets_mod">Assets</h2>
+          </div>
+          <div data-animation_name="round_block" class="assets_circle animation_target">
+            <div class="assets_decor_circle"></div>
+            <ul class="assets_circle_list">
+              <li class="assets_circle_item">
+                <div class="assets_circle_center">
+                  <div class="assets_circle_shape">
+                    <div class="assets_circle_text">Company culture of quality above all else</div>
+                  </div>
+                </div>
+              </li>
+              <li class="assets_circle_item">
+                <div class="assets_circle_center">
+                  <div class="assets_circle_shape">
+                    <div class="assets_circle_text">Reliable QA systems, skilled, loyal team and efective induction process</div>
+                  </div>
+                </div>
+              </li>
+              <li class="assets_circle_item">
+                <div class="assets_circle_center">
+                  <div class="assets_circle_shape">
+                    <div class="assets_circle_text">Estabilished relation for marine and aerospace</div>
+                  </div>
+                </div>
+              </li>
+              <li class="assets_circle_item">
+                <div class="assets_circle_center">
+                  <div class="assets_circle_shape">
+                    <div class="assets_circle_text">Proven track record of T&D Incentive registration</div>
+                  </div>
+                </div>
+              </li>
+              <li class="assets_circle_item">
+                <div class="assets_circle_center">
+                  <div class="assets_circle_shape">
+                    <div class="assets_circle_text">Intellectual property in evolution of product lines including world leading hydrofoil technology</div>
+                  </div>
+                </div>
+              </li>
+              <li class="assets_circle_item">
+                <div class="assets_circle_center">
+                  <div class="assets_circle_shape">
+                    <div class="assets_circle_text">Tangible assets including specialised equipment for fabricating moulds and parts in advanced composite materials, all owned outright and unencumbered</div>
+                  </div>
+                </div>
+              </li>
+              <li class="assets_circle_item">
+                <div class="assets_circle_center">
+                  <div class="assets_circle_shape">
+                    <div class="assets_circle_text">Moulds, test platforms, support boat and other ancillaries.</div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <footer id="page_footer" class="footer fixed">
+        <div class="footer_in">
+          <ul class="social_list footer_mod">
+            <li class="social_item footer_mod"><a href="#" class="social_link google_mod footer_mod"><img alt="" src="i/icons/google.svg" class="social_item_img"/></a></li>
+            <li class="social_item footer_mod"><a href="#" class="social_link twitter_mod footer_mod"><img alt="" src="i/icons/twitter.svg" class="social_item_img"/></a></li>
+            <li class="social_item footer_mod"><a href="#" class="social_link face_mod footer_mod"><img alt="" src="i/icons/face.svg" class="social_item_img"/></a></li>
+          </ul>
+          <ul class="contact_list footer_mod">
+            <li class="contact_item footer_mod"><span class="contact_item_text footer_mod">dario@carbonicboats.com</span></li>
+            <li class="contact_item footer_mod"><span class="contact_item_text footer_mod">PO BOX 2123 Rose Bay North, NSW, Australia 2030</span></li>
+            <li class="contact_item footer_mod"><span class="contact_item_text footer_mod">Phone: +61 412 127 388</span></li>
+          </ul>
+          <nav class="footer_nav">
+            <ul class="main_menu_list footer_mod">
+              <li class="main_menu_item footer_mod"><a href="#" class="main_menu_link footer_mod">News/blog</a></li>
+              <li class="main_menu_item footer_mod"><a href="#" class="main_menu_link footer_mod">Team and story</a></li>
+              <li class="main_menu_item active_mod footer_mod"><a href="#" class="main_menu_link footer_mod">In the media</a></li>
+              <li class="main_menu_item footer_mod"><a href="#" class="main_menu_link footer_mod">Careers</a></li>
+              <li class="main_menu_item footer_mod"><a href="#" class="main_menu_link footer_mod">Online shop</a></li>
+              <li class="main_menu_item footer_mod"><a href="#" class="main_menu_link footer_mod">Past projects</a></li>
+              <li class="main_menu_item footer_mod"><a href="#" class="main_menu_link footer_mod">Parners</a></li>
+              <li class="main_menu_item footer_mod"><a href="#" class="main_menu_link footer_mod">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="about_site_info"><span class="site_year">&copy; 2014</span><a href="#" class="f_logo_w"><img alt="" src="i/f_logo.png" class="f_logo_img"/></a><span class="site_designer">Designed by<a href="#" class="site_designer_link">kingatarczynska.com</a></span></div>
+      </footer>
+    </div>
+  </body>
+</html>

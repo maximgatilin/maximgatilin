@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Title of the page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="js/modernizr.2.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <script src="js/mapInit.js"></script>
+    <script src="js/fotorama.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" media="all" href="styles/main_global.css"/>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header_row"><a href="#" class="header_logo_w"><img alt="" src="i/logo.svg" class="header_logo_i"/></a>
+      </div>
+      <div class="head_menu_trigger">
+        <div id="user_menu_butt" class="user_menu_butt"><span class="user_menu_butt_decor"></span></div>
+      </div>
+      <div class="head_dropdown_block">
+        <ul id="head_cat_list" class="head_cat_list">
+          <li class="head_cat_item">
+            <div class="head_cat_item_in"><span class="head_cat_title">Aerospace:</span>
+              <ul class="head_cat_sublist">
+                <li class="head_cat_subitem"><a href="#" class="head_cat_sublink">Conservation/Poaching patrol</a></li>
+                <li class="head_cat_subitem"><a href="#" class="head_cat_sublink">Law enforcement</a></li>
+                <li class="head_cat_subitem"><a href="#" class="head_cat_sublink">Pipline/Powerline inspection</a></li>
+                <li class="head_cat_subitem"><a href="#" class="head_cat_sublink">Agricultural surveying</a></li>
+                <li class="head_cat_subitem"><a href="#" class="head_cat_sublink">Mining surveying</a></li>
+                <li class="head_cat_subitem"><a href="#" class="head_cat_sublink">General surveillance</a></li>
+                <li class="head_cat_subitem"><a href="#" class="head_cat_sublink">Properity development/construction</a></li>
+                <li class="head_cat_subitem"><a href="#" class="head_cat_sublink">meteorogical measurment</a></li>
+                <li class="head_cat_subitem"><a href="#" class="head_cat_sublink">disaster / emergency assessment</a></li>
+                <li class="head_cat_subitem"><a href="#" class="head_cat_sublink">defence / military surveillance</a></li>
+                <li class="head_cat_subitem"><a href="#" class="head_cat_sublink">coastal patrol / shark watch</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="head_cat_item">
+            <div class="head_cat_item_in"><span class="head_cat_title">Marine:</span>
+              <ul class="head_cat_sublist">
+                <li class="head_cat_subitem"><a href="#" class="head_cat_sublink">A Class catamaran <strong>paradox v3</strong></a></li>
+                <li class="head_cat_subitem"><a href="#" class="head_cat_sublink">M CLASS RC YACHT <strong>KATAMARAN V2</strong></a></li>
+                <li class="head_cat_subitem"><a href="#" class="head_cat_sublink">IOM class rc yacht <strong>Blackiece v2</strong></a></li>
+                <li class="head_cat_subitem"><a href="#" class="head_cat_sublink">R10R class RC yacht <strong>Rubicon V3</strong></a></li>
+                <li class="head_cat_subitem"><a href="#" class="head_cat_sublink">Kayak</a></li>
+                <li class="head_cat_subitem"><a href="#" class="head_cat_sublink">Moth</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="head_cat_item">
+            <div class="head_cat_item_in"><span class="head_cat_title">Custom:</span>
+              <ul class="head_cat_sublist">
+                <li class="head_cat_subitem"><a href="#" class="head_cat_sublink">Design</a></li>
+                <li class="head_cat_subitem"><a href="#" class="head_cat_sublink">Tooling</a></li>
+                <li class="head_cat_subitem"><a href="#" class="head_cat_sublink">Matching</a></li>
+                <li class="head_cat_subitem"><a href="#" class="head_cat_sublink">Prototyping & production</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <nav class="header_nav">
+          <ul class="main_menu_list header_mod">
+            <li class="main_menu_item header_mod"><a href="#" class="main_menu_link header_mod">News/blog</a></li>
+            <li class="main_menu_item header_mod"><a href="#" class="main_menu_link header_mod">Team and story</a></li>
+            <li class="main_menu_item active_mod header_mod"><a href="#" class="main_menu_link header_mod">In the media</a></li>
+            <li class="main_menu_item header_mod"><a href="#" class="main_menu_link header_mod">Careers</a></li>
+            <li class="main_menu_item header_mod"><a href="#" class="main_menu_link header_mod">Online shop</a></li>
+            <li class="main_menu_item header_mod"><a href="#" class="main_menu_link header_mod">Past projects</a></li>
+            <li class="main_menu_item header_mod"><a href="#" class="main_menu_link header_mod">Parners</a></li>
+            <li class="main_menu_item header_mod"><a href="#" class="main_menu_link header_mod">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="wrapper">
+      <div class="base">
+        <ul class="product_image_list">
+          <li class="product_image_item mod_1">
+            <div class="product_image_item_in">
+              <div class="product_image_item_text">
+                <h1 class="section_title st_mod">Class catamaran <strong>Paradox v3a</strong></h1>
+                <p class="text_p product_image_mod">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id leo justo. Morbi risus arcu, vehicula sit amet scelerisque at, elementum et elit. Sed orci leo, accumsan vitae massa sodales, aliquet vehicula nisi. Nulla vel elementum massa, ac elementum turpis.</p>
+                <p class="text_p product_image_mod">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id leo justo. Morbi risus arcu, vehicula sit amet scelerisque at, elementum et elit. Sed orci leo, accumsan vitae massa sodales, aliquet vehicula nisi. Nulla vel elementum massa, ac elementum turpis.</p>
+              </div>
+            </div>
+          </li>
+          <li class="product_image_item mod_2">
+            <div class="product_image_item_in"><img alt="" src="i/photos/photo_1.jpg" class="product_image"></div>
+          </li>
+          <li class="product_image_item mod_3">
+            <div class="product_image_item_in"><img alt="" src="i/photos/photo_2.jpg" class="product_image"></div>
+          </li>
+          <li class="product_image_item mod_3">
+            <div class="product_image_item_in"><img alt="" src="i/photos/photo_3.jpg" class="product_image"></div>
+          </li>
+          <li class="product_image_item mod_3">
+            <div class="product_image_item_in"><img alt="" src="i/photos/photo_4.jpg" class="product_image"></div>
+          </li>
+        </ul>
+        <div class="content_block st_mod">
+          <div class="text_block_w product_mod">
+            <div class="text_block product_mod">
+              <h2 class="section_title st_mod">Lorem ipsum</h2>
+              <p class="text_p product_mod">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id leo justo. Morbi risus arcu, vehicula sit amet scelerisque at, elementum et elit. Sed orci leo, accumsan vitae massa sodales, aliquet vehicula nisi. Nulla vel elementum massa, ac elementum turpis.</p>
+              <p class="text_p product_mod">Nulla dictum varius lorem, id mollis est posuere et. Proin facilisis ligula quis mi eleifend sollicitudin. Aenean felis risus, pellentesque id odio quis, gravida efficitur diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut laoreet dui sed feugiat suscipit.</p>
+              <p class="text_p product_mod">orci leo, accumsan vitae massa sodales, aliquet vehicula nisi. Nulla vel elementum massa.</p>
+            </div>
+            <div class="text_block product_mod">
+              <h2 class="section_title st_mod">Lorem ipsum</h2>
+              <ul class="product_text_list">
+                <li class="product_text_item">
+                  <div class="product_text_item_in">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id leo justo. Morbi risus arcu, vehicula sit amet scelerisque at, elementum et elit.</div>
+                </li>
+                <li class="product_text_item">
+                  <div class="product_text_item_in">Proin id leo justo. Morbi risus arcu, vehicula sit amet scelerisque at, elementum et elit.</div>
+                </li>
+                <li class="product_text_item">
+                  <div class="product_text_item_in">Morbi risus arcu, vehicula sit amet scelerisque at, elementum et elit.</div>
+                </li>
+                <li class="product_text_item">
+                  <div class="product_text_item_in">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id leo justo. Morbi risus arcu, vehicula sit amet scelerisque.</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <ul class="product_image_list">
+          <li class="product_image_item mod_4">
+            <div class="product_image_item_in">
+              <ul class="product_image_sublist">
+                <li class="product_image_subitem mod_1">
+                  <div class="product_image_subitem_in"><img alt="" src="i/photos/photo_5.jpg" class="product_image"></div>
+                </li>
+                <li class="product_image_subitem mod_1">
+                  <div class="product_image_subitem_in"><img alt="" src="i/photos/photo_6.jpg" class="product_image"></div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="product_image_item mod_4">
+            <div class="product_image_item_in"><img alt="" src="i/photos/photo_7.jpg" class="product_image"></div>
+          </li>
+          <li class="product_image_item mod_5">
+            <div class="product_image_item_in"><img alt="" src="i/photos/photo_8.jpg" class="product_image"></div>
+          </li>
+        </ul>
+      </div>
+      <footer id="page_footer" class="footer fixed">
+        <div class="footer_in">
+          <ul class="social_list footer_mod">
+            <li class="social_item footer_mod"><a href="#" class="social_link google_mod footer_mod"><img alt="" src="i/icons/google.svg" class="social_item_img"/></a></li>
+            <li class="social_item footer_mod"><a href="#" class="social_link twitter_mod footer_mod"><img alt="" src="i/icons/twitter.svg" class="social_item_img"/></a></li>
+            <li class="social_item footer_mod"><a href="#" class="social_link face_mod footer_mod"><img alt="" src="i/icons/face.svg" class="social_item_img"/></a></li>
+          </ul>
+          <ul class="contact_list footer_mod">
+            <li class="contact_item footer_mod"><span class="contact_item_text footer_mod">dario@carbonicboats.com</span></li>
+            <li class="contact_item footer_mod"><span class="contact_item_text footer_mod">PO BOX 2123 Rose Bay North, NSW, Australia 2030</span></li>
+            <li class="contact_item footer_mod"><span class="contact_item_text footer_mod">Phone: +61 412 127 388</span></li>
+          </ul>
+          <nav class="footer_nav">
+            <ul class="main_menu_list footer_mod">
+              <li class="main_menu_item footer_mod"><a href="#" class="main_menu_link footer_mod">News/blog</a></li>
+              <li class="main_menu_item footer_mod"><a href="#" class="main_menu_link footer_mod">Team and story</a></li>
+              <li class="main_menu_item active_mod footer_mod"><a href="#" class="main_menu_link footer_mod">In the media</a></li>
+              <li class="main_menu_item footer_mod"><a href="#" class="main_menu_link footer_mod">Careers</a></li>
+              <li class="main_menu_item footer_mod"><a href="#" class="main_menu_link footer_mod">Online shop</a></li>
+              <li class="main_menu_item footer_mod"><a href="#" class="main_menu_link footer_mod">Past projects</a></li>
+              <li class="main_menu_item footer_mod"><a href="#" class="main_menu_link footer_mod">Parners</a></li>
+              <li class="main_menu_item footer_mod"><a href="#" class="main_menu_link footer_mod">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="about_site_info"><span class="site_year">&copy; 2014</span><a href="#" class="f_logo_w"><img alt="" src="i/f_logo.png" class="f_logo_img"/></a><span class="site_designer">Designed by<a href="#" class="site_designer_link">kingatarczynska.com</a></span></div>
+      </footer>
+    </div>
+  </body>
+</html>

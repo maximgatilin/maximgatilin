@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Title of the page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="js/modernizr.2.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <script src="js/mapInit.js"></script>
+    <script src="js/fotorama.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" media="all" href="styles/main_global.css"/>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header_row"><a href="#" class="header_logo_w"><img alt="" src="i/logo.svg" class="header_logo_i"/></a>
+      </div>
+      <div class="head_menu_trigger">
+        <div id="user_menu_butt" class="user_menu_butt"><span class="user_menu_butt_decor"></span></div>
+      </div>
+      <div class="head_dropdown_block">
+        <ul id="head_cat_list" class="head_cat_list">
+          <li class="head_cat_item">
+            <div class="head_cat_item_in"><span class="head_cat_title">Aerospace:</span>
+              <ul class="head_cat_sublist">
+                <li class="head_cat_subitem"><a href="#" class="head_cat_sublink">Conservation/Poaching patrol</a></li>
+                <li class="head_cat_subitem"><a href="#" class="head_cat_sublink">Law enforcement</a></li>
+                <li class="head_cat_subitem"><a href="#" class="head_cat_sublink">Pipline/Powerline inspection</a></li>
+                <li class="head_cat_subitem"><a href="#" class="head_cat_sublink">Agricultural surveying</a></li>
+                <li class="head_cat_subitem"><a href="#" class="head_cat_sublink">Mining surveying</a></li>
+                <li class="head_cat_subitem"><a href="#" class="head_cat_sublink">General surveillance</a></li>
+                <li class="head_cat_subitem"><a href="#" class="head_cat_sublink">Properity development/construction</a></li>
+                <li class="head_cat_subitem"><a href="#" class="head_cat_sublink">meteorogical measurment</a></li>
+                <li class="head_cat_subitem"><a href="#" class="head_cat_sublink">disaster / emergency assessment</a></li>
+                <li class="head_cat_subitem"><a href="#" class="head_cat_sublink">defence / military surveillance</a></li>
+                <li class="head_cat_subitem"><a href="#" class="head_cat_sublink">coastal patrol / shark watch</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="head_cat_item">
+            <div class="head_cat_item_in"><span class="head_cat_title">Marine:</span>
+              <ul class="head_cat_sublist">
+                <li class="head_cat_subitem"><a href="#" class="head_cat_sublink">A Class catamaran <strong>paradox v3</strong></a></li>
+                <li class="head_cat_subitem"><a href="#" class="head_cat_sublink">M CLASS RC YACHT <strong>KATAMARAN V2</strong></a></li>
+                <li class="head_cat_subitem"><a href="#" class="head_cat_sublink">IOM class rc yacht <strong>Blackiece v2</strong></a></li>
+                <li class="head_cat_subitem"><a href="#" class="head_cat_sublink">R10R class RC yacht <strong>Rubicon V3</strong></a></li>
+                <li class="head_cat_subitem"><a href="#" class="head_cat_sublink">Kayak</a></li>
+                <li class="head_cat_subitem"><a href="#" class="head_cat_sublink">Moth</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="head_cat_item">
+            <div class="head_cat_item_in"><span class="head_cat_title">Custom:</span>
+              <ul class="head_cat_sublist">
+                <li class="head_cat_subitem"><a href="#" class="head_cat_sublink">Design</a></li>
+                <li class="head_cat_subitem"><a href="#" class="head_cat_sublink">Tooling</a></li>
+                <li class="head_cat_subitem"><a href="#" class="head_cat_sublink">Matching</a></li>
+                <li class="head_cat_subitem"><a href="#" class="head_cat_sublink">Prototyping & production</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <nav class="header_nav">
+          <ul class="main_menu_list header_mod">
+            <li class="main_menu_item header_mod"><a href="#" class="main_menu_link header_mod">News/blog</a></li>
+            <li class="main_menu_item header_mod"><a href="#" class="main_menu_link header_mod">Team and story</a></li>
+            <li class="main_menu_item active_mod header_mod"><a href="#" class="main_menu_link header_mod">In the media</a></li>
+            <li class="main_menu_item header_mod"><a href="#" class="main_menu_link header_mod">Careers</a></li>
+            <li class="main_menu_item header_mod"><a href="#" class="main_menu_link header_mod">Online shop</a></li>
+            <li class="main_menu_item header_mod"><a href="#" class="main_menu_link header_mod">Past projects</a></li>
+            <li class="main_menu_item header_mod"><a href="#" class="main_menu_link header_mod">Parners</a></li>
+            <li class="main_menu_item header_mod"><a href="#" class="main_menu_link header_mod">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="wrapper">
+      <div class="base">
+        <div class="custom_head_block">
+          <div class="custom_head_in">
+            <div class="custom_head_decor_tl"></div>
+            <div class="custom_head_decor_br"></div>
+            <h1 class="custom_head_title">Our skill and facilities at your service</h1>
+            <div class="custom_head_def">We can help with your custom product, whether it is a one-off, a proof-of-concept, a production prototype or a full scale production setup.What we do is take an idea or a problem, developelegant, efficient, beautiful solutions, and implement them. We have the knowledge, systems, network, facilities, and experience to test, validate,iterate and refine.</div><a href="#" id="custom_scroll_link" class="custom_scroll_link"></a>
+          </div>
+        </div>
+        <ul id="custom_list" class="custom_list">
+          <li class="custom_item">
+            <div class="custom_item_in left_mod black_mod">
+              <div class="custom_decor_line left_mod black_mod"></div>
+              <div class="custom_text_block left_mod black_mod">
+                <h2 class="custom_title left_mod black_mod">design</h2>
+                <div class="custom_text black_mod"><p class="custom_p">We listen to your requirements, create a detailed brief and clarify a hierarchy of requirements. Our goal is to provide value through good design. So our solutions always respond to your needs. </p><p class="custom_p">When proposing solutions we evaluate and assess all aspects, from geometry and technical specs to ease of assembly and component cost. We will walk you through the relative merits of different solutions with respect to cost, practicality, and lead times, as well as technical, aesthetic, and user interface considerations.</p><p class="custom_p">Carbonix can take your concept to the best intersection of form, function, cost and practicality.</p><p class="custom_p">We have a great range of skills in-house and also partner with a proven network of specialists fordvanced tasks such as digital fairing and Computational Fluid Dynamics.</p></div>
+              </div>
+              <div class="custom_buttons left_mod black_mod">
+                <div class="custom_gall_butt_w"><a href="#" class="butt custom_gal_butt left_mod black_mod">see gallery<span class="butt_decor"></span></a><span class="butt_round_decor left_mod black_mod"></span></div>
+                <div class="custom_cont_butt_w"><a href="#" class="butt custom_cont_butt left_mod black_mod">contact us<span class="butt_decor"></span></a><span class="butt_round_decor left_mod black_mod"></span></div>
+              </div>
+            </div>
+          </li>
+          <li class="custom_item">
+            <div class="custom_item_in right_mod dark_gray_mod">
+              <div class="custom_decor_line right_mod dark_gray_mod"></div>
+              <div class="custom_text_block right_mod dark_gray_mod">
+                <h2 class="custom_title right_mod dark_gray_mod">tooling</h2>
+                <div class="custom_text dark_gray_mod"><p class="custom_p">We create the most appropriate tooling for your task. One-off projects may require highly customized plugs, moulds and jigs. Production runs will need more durable fixtures. We help you strike the balance between setup cost and unit cost.</p><p class="custom_p">Most tooling we create is based on full 3D CAD models that are then sent to a robotic cutter. This system ensures accuracy because all components are pre-fitted and checked in virtual space.</p><p class="custom_p">Machined forms can be complex with arbitrary curves and no need for conventional planar reference grids. We can create curved parting planes and multi-split tools with ease and reliability.</p></div>
+              </div>
+              <div class="custom_buttons right_mod dark_gray_mod">
+                <div class="custom_gall_butt_w"><a href="#" class="butt custom_gal_butt right_mod dark_gray_mod">see gallery<span class="butt_decor"></span></a><span class="butt_round_decor right_mod dark_gray_mod"></span></div>
+                <div class="custom_cont_butt_w"><a href="#" class="butt custom_cont_butt right_mod dark_gray_mod">contact us<span class="butt_decor"></span></a><span class="butt_round_decor right_mod dark_gray_mod"></span></div>
+              </div>
+            </div>
+          </li>
+          <li class="custom_item">
+            <div class="custom_item_in left_mod gray_mod">
+              <div class="custom_decor_line left_mod gray_mod"></div>
+              <div class="custom_text_block left_mod gray_mod">
+                <h2 class="custom_title left_mod gray_mod">machining</h2>
+                <div class="custom_text gray_mod"><p class="custom_p">We can work with aluminium, steel, titanium and engineering plastics to create your ideal fittings. Our machining work has ranged from complex mating components to custom fasteners to scale models and even trophies. </p><p class="custom_p">We are able to anodise and select from a range of appropriate finishes for your specific needs. For high volume components we can create metal moulds for injection mouldings or lost castings for intricate metal items.</p></div>
+              </div>
+              <div class="custom_buttons left_mod gray_mod">
+                <div class="custom_gall_butt_w"><a href="#" class="butt custom_gal_butt left_mod gray_mod">see gallery<span class="butt_decor"></span></a><span class="butt_round_decor left_mod gray_mod"></span></div>
+                <div class="custom_cont_butt_w"><a href="#" class="butt custom_cont_butt left_mod gray_mod">contact us<span class="butt_decor"></span></a><span class="butt_round_decor left_mod gray_mod"></span></div>
+              </div>
+            </div>
+          </li>
+          <li class="custom_item">
+            <div class="custom_item_in right_mod light_gray_mod">
+              <div class="custom_decor_line right_mod light_gray_mod"></div>
+              <div class="custom_text_block right_mod light_gray_mod">
+                <h2 class="custom_title right_mod light_gray_mod">prototyping</h2>
+                <div class="custom_text light_gray_mod"><p class="custom_p">Making a proof-of concept with a view to future production is a highly critical task that requires a pticular mindset. Since we have an extensive history of developing production items in-house, we know what to look for.</p><p class="custom_p">We make the first product always keeping an eye out for how each step will translate into a production process. We keep track of the assembly steps that are increasing labour content and work to address and streamline them. We have careful systems for recording changes and incorporating feedback.</p><p class="custom_p">If you entrust us with getting your product ready for production, we will deliver.</p></div>
+              </div>
+              <div class="custom_buttons right_mod light_gray_mod">
+                <div class="custom_gall_butt_w"><a href="#" class="butt custom_gal_butt right_mod light_gray_mod">see gallery<span class="butt_decor"></span></a><span class="butt_round_decor right_mod light_gray_mod"></span></div>
+                <div class="custom_cont_butt_w"><a href="#" class="butt custom_cont_butt right_mod light_gray_mod">contact us<span class="butt_decor"></span></a><span class="butt_round_decor right_mod light_gray_mod"></span></div>
+              </div>
+            </div>
+          </li>
+          <li class="custom_item">
+            <div class="custom_item_in left_mod light_mod">
+              <div class="custom_decor_line left_mod light_mod"></div>
+              <div class="custom_text_block left_mod light_mod">
+                <h2 class="custom_title left_mod light_mod">production</h2>
+                <div class="custom_text light_mod"><p class="custom_p">We can work with aluminium, steel, titanium and engineering plastics to create your ideal fittings. Our machining work has ranged from complex mating components to custom fasteners to scale models and even trophies. </p><p class="custom_p">We are able to anodise and select from a range of appropriate finishes for your specific needs.For high volume components we can create metal moulds for injection mouldings or lost castings for intricate metal items.</p></div>
+              </div>
+              <div class="custom_buttons left_mod light_mod">
+                <div class="custom_gall_butt_w"><a href="#" class="butt custom_gal_butt left_mod light_mod">see gallery<span class="butt_decor"></span></a><span class="butt_round_decor left_mod light_mod"></span></div>
+                <div class="custom_cont_butt_w"><a href="#" class="butt custom_cont_butt left_mod light_mod">contact us<span class="butt_decor"></span></a><span class="butt_round_decor left_mod light_mod"></span></div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <footer id="page_footer" class="footer fixed">
+        <div class="footer_in">
+          <ul class="social_list footer_mod">
+            <li class="social_item footer_mod"><a href="#" class="social_link google_mod footer_mod"><img alt="" src="i/icons/google.svg" class="social_item_img"/></a></li>
+            <li class="social_item footer_mod"><a href="#" class="social_link twitter_mod footer_mod"><img alt="" src="i/icons/twitter.svg" class="social_item_img"/></a></li>
+            <li class="social_item footer_mod"><a href="#" class="social_link face_mod footer_mod"><img alt="" src="i/icons/face.svg" class="social_item_img"/></a></li>
+          </ul>
+          <ul class="contact_list footer_mod">
+            <li class="contact_item footer_mod"><span class="contact_item_text footer_mod">dario@carbonicboats.com</span></li>
+            <li class="contact_item footer_mod"><span class="contact_item_text footer_mod">PO BOX 2123 Rose Bay North, NSW, Australia 2030</span></li>
+            <li class="contact_item footer_mod"><span class="contact_item_text footer_mod">Phone: +61 412 127 388</span></li>
+          </ul>
+          <nav class="footer_nav">
+            <ul class="main_menu_list footer_mod">
+              <li class="main_menu_item footer_mod"><a href="#" class="main_menu_link footer_mod">News/blog</a></li>
+              <li class="main_menu_item footer_mod"><a href="#" class="main_menu_link footer_mod">Team and story</a></li>
+              <li class="main_menu_item active_mod footer_mod"><a href="#" class="main_menu_link footer_mod">In the media</a></li>
+              <li class="main_menu_item footer_mod"><a href="#" class="main_menu_link footer_mod">Careers</a></li>
+              <li class="main_menu_item footer_mod"><a href="#" class="main_menu_link footer_mod">Online shop</a></li>
+              <li class="main_menu_item footer_mod"><a href="#" class="main_menu_link footer_mod">Past projects</a></li>
+              <li class="main_menu_item footer_mod"><a href="#" class="main_menu_link footer_mod">Parners</a></li>
+              <li class="main_menu_item footer_mod"><a href="#" class="main_menu_link footer_mod">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="about_site_info"><span class="site_year">&copy; 2014</span><a href="#" class="f_logo_w"><img alt="" src="i/f_logo.png" class="f_logo_img"/></a><span class="site_designer">Designed by<a href="#" class="site_designer_link">kingatarczynska.com</a></span></div>
+      </footer>
+    </div>
+  </body>
+</html>
